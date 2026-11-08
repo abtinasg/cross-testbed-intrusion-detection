@@ -1,0 +1,28 @@
+{
+ "status": "PASS",
+ "problems": [],
+ "seal_sha256": "6b5d12ef166f95c55b9a1e52029ce1f3e6829d9dd34af3e0ff1913b646bff856",
+ "days": {
+  "Wed14": {
+   "n": 5898350,
+   "n_distinct_scores": 207459,
+   "first_avail": "2018-02-14T12:28:08",
+   "last_avail": "2018-02-15T00:47:40",
+   "n_hours": 13
+  },
+  "Fri16": {
+   "n": 7390266,
+   "n_distinct_scores": 239217,
+   "first_avail": "2018-02-16T12:27:15",
+   "last_avail": "2018-02-16T22:15:26",
+   "n_hours": 11
+  }
+ },
+ "guard_by_key": {
+  "FINAL_FIT": "rg8_guard.py",
+  "SCORE/Wed14": "rg8_guard_v23.py",
+  "SCORE/Fri16": "rg8_guard_v23.py"
+ },
+ "recovery_token": "GO-RECOVER-P2-WED14-6a48c8ab0904",
+ "no_label_column_in_scoring_inputs": true
+}

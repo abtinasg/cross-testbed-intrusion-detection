@@ -1,0 +1,25 @@
+{
+ "utc": "2026-11-07T13:44:59Z",
+ "key": [
+  "RF-03",
+  "Fri",
+  "Tue"
+ ],
+ "token": "GO-RECOVER-TB-FRI-TUE-8c3a6e7f980c",
+ "attempt": 2,
+ "attempt_id": "8a1cc9cad0ef4982bca61cf5aabdcf5f",
+ "authorised_by": "owner: one-time T-b recovery after guard sampler race (MEASUREMENT_UNAVAILABLE at job_returned)",
+ "replaces": {
+  "ledger_line": 18,
+  "ledger_line_sha256": "41c347c84db3409ea7365e557e61136d8ad5333779c907445a798a89ab7cc439"
+ },
+ "stopped_archived_as": "STOPPED_Fri__Tue__attempt1.json",
+ "stopped_sha256": "8c3a6e7f980ce23a703f278596526ab672708bbfa9de6c5cfaf29cbb63b558a3",
+ "attempt1_orphan_files_sha256": {
+  "scores_RF-03_outer=Fri_inner=Tue.npy": "57c12bae724ffa20339e85a8bea11c96ad9e0582f72589d6dcc0262d3eff77d1",
+  "labels_RF-03_outer=Fri_inner=Tue.npy": "aebb3bd89fa02006ab5857dd4b86068f2b3c6d59c3c98d38cdceead4d963b3c7",
+  "row_ids_RF-03_outer=Fri_inner=Tue.npy": "9e6df97e7ded0aaef895482004023cccd08965420c07853c55ced4958e865a77"
+ },
+ "attempt1_evidence_dir_kept": "evidence/RF-03__outer=Fri__inner=Tue",
+ "rule": "exactly one recovery attempt; any failure of attempt 2 stops T-b with no further retry"
+}

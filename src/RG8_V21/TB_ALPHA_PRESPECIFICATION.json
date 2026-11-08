@@ -1,0 +1,12 @@
+{
+ "record": "T-b alpha prespecification (CV v2 section 4)",
+ "date": "2026-11-06",
+ "basis": "Owner fast-track decision (2026-11-06): 'propose alpha = 0.01 primary and 0.05 sensitivity if no earlier binding alpha decision exists'. No earlier binding alpha exists (NW4 A9, NW4b, PILOT_AUTHORIZATION_CHECKLIST_v3 all list it as open).",
+ "alpha_primary": 0.01,
+ "alpha_sensitivity": 0.05,
+ "quantile_method": "higher",
+ "comparison": ">",
+ "fixed_before": "any held-out-day or target (P2) evaluation; no P1 or P2 result existed when this file was written",
+ "tuning_on_P2_labels": false,
+ "change_rule": "any change needs a new record written before the affected evaluation"
+}

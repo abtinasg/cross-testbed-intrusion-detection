@@ -1,0 +1,41 @@
+{
+ "record": "Final-detector T-b thresholds (RF-03 trained on all five P1 days); P1-only; computed before any P2 scoring",
+ "rule": "tau = numpy.quantile(benign flat leave-one-day-out RF-03 scores of Mon..Fri pooled in day order, 1 - alpha, method='higher'); alert iff score > tau",
+ "justification": "CV v2 section 4 applied one level up: the inner leave-one-day-out of a model trained on D is the flat CV over D; the stored flat vectors are those inner OOF scores (no refit)",
+ "settings_sha256": "d1a6585ac71b8cf9c41d0901bc878aaf60677f4d94f0ae8a23f14c52f5f2a683",
+ "n_benign_pooled": 1594545,
+ "pooled_benign_sha256": "a028a96ab082350047c179a33dabd06f94945acf3986ac9e5e3f688cb050d64a",
+ "component_scores_sha256": {
+  "Mon": "0d61a6242e26af7658784f1c36b8b94e8bdf9805302ced07aeb5371422c858f8",
+  "Tue": "0474af9a1c200e35a644b2a58d3c2717e766e403c7b01cd525cb95446b594420",
+  "Wed": "9575513f933f704a6b1dc0abd32443d5ec77e2e040e24bf7e22076accc36a84b",
+  "Thu": "9a13aaeb3e4e53bbc3fb94c47f8a455d09b5c956df18c1cb5702e3965ef520ab",
+  "Fri": "30b9c39dd18d2f063503e39c6ee44b9fa388998986a50b35a6b219f1910efac2"
+ },
+ "thresholds": {
+  "0.01": {
+   "tau": 0.033895809434983715,
+   "tau_hex": "0x1.15acaa1fd49c0p-5",
+   "calibration_fpr": 0.009999717787832893,
+   "per_day_benign_fpr_at_tau": {
+    "Mon": 0.013397950616752417,
+    "Tue": 0.008557965381015088,
+    "Wed": 0.009821659343499612,
+    "Thu": 0.009463450609817037,
+    "Fri": 0.00796620769554118
+   }
+  },
+  "0.05": {
+   "tau": 0.0033036312037174214,
+   "tau_hex": "0x1.b10377f4bdea5p-9",
+   "calibration_fpr": 0.04999984321546272,
+   "per_day_benign_fpr_at_tau": {
+    "Mon": 0.07557638903838289,
+    "Tue": 0.04922495993907566,
+    "Wed": 0.036194291622050734,
+    "Thu": 0.03851203953558099,
+    "Fri": 0.0450769109842077
+   }
+  }
+ }
+}

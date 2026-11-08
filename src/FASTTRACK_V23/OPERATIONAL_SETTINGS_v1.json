@@ -1,0 +1,47 @@
+{
+ "record": "Operational settings for the conference paper (fast-track). Written 2026-11-07 BEFORE any T-a result on P1 and BEFORE any P2 scoring. P1-only operational reasoning; no P2 score, label or outcome used.",
+ "status": "PROPOSED_FOR_FREEZE (owner approval freezes this exact file by its SHA-256)",
+ "detector": {"config_id": "RF-03", "config_sha256": "8a93f95e96226ac2179c6ac658328d26d8caaca14807bdce6630e8fb89be2c2f",
+              "selected_by": "CV v2 section 3.3, flat mAP_day (P1_FLAT_CV_CLOSEOUT/P1_FLAT_CV_VERIFICATION.json)"},
+ "tb": {"alpha_primary": 0.01, "alpha_sensitivity": 0.05, "source": "RG8_V21/TB_ALPHA_PRESPECIFICATION.json (unchanged)",
+        "quantile_method": "higher", "comparison": ">"},
+ "ta_primary": {
+   "name": "Recall-at-relative-quota",
+   "quota": "k_h = floor(q * N_h)",
+   "q": 0.01,
+   "selection": "hard cap (A1b.1): rank by (score desc, A1.2 tie key asc); alert whole indistinguishable groups only while they fit; first non-fitting group omitted, no backfill",
+   "tie_key": "A1.2: first 8 bytes LE uint64 of SHA-256(seed 20261104 LE8 || a_i int64 us LE8 || raw parsed float64 72-feature vector in frozen schema order)",
+   "batches": "hourly, membership by availability time a = Timestamp + Flow Duration (T2), UTC hour floor(a / 1 h), per capture file; hours never cross capture files",
+   "score_delay_s": 0,
+   "decision_time": "D_h = max(C_h, max a_s) = end of hour h (delta_score = 0); reported as a retrospective batch policy only",
+   "small_window": "q * N_h < 1 -> k_h = 0, counted",
+   "empty_hour": "N_h = 0 -> excluded from denominators, counted",
+   "recall": "flow-level pooled Sigma TP_h / Sigma K_h per day; time-block sensitivity = unweighted mean over attack-containing hours; day without attacks -> undefined",
+   "days": "attack-containing days only (P1 Tue-Fri; P2 both days). Never used for Monday FPR or model selection"
+ },
+ "ta_sensitivity": {
+   "name": "Recall-at-K (absolute hourly alert capacity)",
+   "quota": "k_h = min(K, N_h)",
+   "K": 500,
+   "selection": "hard cap, identical to ta_primary",
+   "other_rules": "identical to ta_primary"
+ },
+ "deferred_not_run_in_fast_track": ["T-a overshoot policy", "T-a' previous-hour and T-a'-S", "delta_score = 60 s", "T2c / T2+120 availability", "K = 100 and K = 2000", "q = 0.05"],
+ "analyst_review_capacity": {"R": "not modelled; assumption R = k_h (every alert issued inside the quota is reviewed). Stated in the paper as an assumption"},
+ "annotation_budget": {
+   "b_per_hour": [100, 250, 500],
+   "source": "Decision Brief v1 section 6 grid (unchanged)",
+   "role": "labels obtained per hour for ESTIMATING detector performance (audit sample drawn from all completed flows of the hour, alerted or not); never used to train, adapt or threshold the detector",
+   "design": "M0 only: stratified SRSWOR by hour, b_h = min(b, N_h); M1/M2 alert-stratified designs deferred",
+   "estimators": "per-day recall and FPR of the fixed detector under T-b (alpha 0.01) and under T-a primary: combined ratio estimator over hourly strata with weights N_h / b_h; 95% CI by Taylor linearisation with finite-population correction (Cochran 1977, stratified ratio estimator)",
+   "replicates": 1000,
+   "seed": 20261107,
+   "reported": "bias vs census, empirical CI coverage, mean CI width, P(zero audited attack flows) per day, audited attack flows and attack-containing hours with every result"
+ },
+ "rationale": {
+   "q_0.01": "Equal to the primary nominal FPR alpha = 0.01, so the T-a quota and the T-b threshold target the same nominal alert fraction; their comparison then isolates threshold transfer (T-b) from ranking under a fixed volume (T-a). On P1 hourly batches (N_h ~ 0.7k-59k flows) it gives at most ~590 alerts per hour, inside the 100-2000 absolute-capacity range proposed in A1b.2.",
+   "K_500": "Middle value of the A1b.2 candidate set {100, 500, 2000}. Volume-independent: tests whether conclusions survive when the alert budget does not scale with traffic, which matters for cross-testbed data whose hourly volume differs from P1 (known only as aggregate counts from the Stage 02A-0 feasibility audit, not tuned on).",
+   "one_sensitivity_only": "Fast-track scope: the contrast relative vs absolute budget is the scientifically informative one; further values are deferred."
+ },
+ "change_rule": "Any change needs a new versioned record written before the affected evaluation."
+}

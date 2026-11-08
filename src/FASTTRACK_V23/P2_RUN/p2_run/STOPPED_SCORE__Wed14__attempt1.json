@@ -1,0 +1,13 @@
+{
+ "utc": "2026-11-07T14:32:04Z",
+ "reason": "JOB_FAILURE_FIT_ERROR",
+ "detail": {
+  "key": [
+   "SCORE",
+   "Wed14"
+  ],
+  "failure_class": "MEASUREMENT_UNAVAILABLE",
+  "error": "pid 7604: NoSuchProcess: process no longer exists (pid=7604)",
+  "stage_at_end": "job_returned"
+ }
+}

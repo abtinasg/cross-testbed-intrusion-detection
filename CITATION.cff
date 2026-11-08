@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: >-
+  If you use this code, please cite the accompanying paper (preferred-citation below)
+  and the datasets listed in docs/DATASETS.md.
+type: software
+title: "Cross-Testbed Transfer of Source-Calibrated Intrusion Detection: Threshold Failure and Alert-Budget Constraints"
+abstract: >-
+  Research code, frozen experimental configurations, evaluation scripts and aggregate results for a study of
+  source-calibrated flow-based intrusion detection (CIC-IDS2017, corrected) transferred unchanged to two corrected
+  CSE-CIC-IDS2018 days: threshold failure under cross-testbed shift, hourly alert budgets and annotation-budget
+  estimation. No datasets are redistributed.
+authors:
+  - family-names: Tahamtan
+    given-names: Armin
+    affiliation: "Faculty of Engineering, Islamic Azad University, West Tehran Branch, Tehran, Iran"
+  - family-names: Asghari
+    given-names: Abtin
+    affiliation: "Department of Computer Engineering, Islamic Azad University, West Tehran Branch, Tehran, Iran"
+    orcid: "https://orcid.org/0009-0008-0950-4308"
+    email: 0025636170@iau.ir
+  - family-names: Mehraein
+    given-names: MohammadMehdi
+    affiliation: "Department of Financial Management, Islamic Azad University, Central Tehran Branch, Tehran, Iran"
+    orcid: "https://orcid.org/0009-0004-9646-5677"
+repository-code: "https://github.com/abtinasg/cross-testbed-intrusion-detection"
+license: MIT
+version: "1.0.0"
+date-released: "2026-11-08"
+keywords:
+  - network intrusion detection
+  - cross-dataset evaluation
+  - threshold calibration
+  - false-positive rate
+  - alert budget
+  - CIC-IDS2017
+  - CSE-CIC-IDS2018
+preferred-citation:
+  type: conference-paper
+  title: "Cross-Testbed Transfer of Source-Calibrated Intrusion Detection: Threshold Failure and Alert-Budget Constraints"
+  authors:
+    - family-names: Tahamtan
+      given-names: Armin
+    - family-names: Asghari
+      given-names: Abtin
+    - family-names: Mehraein
+      given-names: MohammadMehdi
+  conference:
+    name: "11th National Congress of Electrical and Computer Engineering of Iran (COMCONF11)"
+  notes: "Manuscript prepared for submission to COMCONF11; not yet submitted, accepted or published. No DOI exists."

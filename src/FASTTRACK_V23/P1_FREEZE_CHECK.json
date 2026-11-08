@@ -1,0 +1,32 @@
+{
+ "status": "PASS",
+ "problems": [],
+ "n_ok_keys": 20,
+ "n_vectors_verified": 60,
+ "recovery_chain": {
+  "ledger_line_hash": true,
+  "stopped_hash": true,
+  "token": true,
+  "orphans_archived": true,
+  "orphans_not_referenced": true,
+  "attempt2": true,
+  "attempt1_evidence_kept": true,
+  "no_STOPPED_now": true,
+  "launcher_rc0": true
+ },
+ "settings_sha256": "d1a6585ac71b8cf9c41d0901bc878aaf60677f4d94f0ae8a23f14c52f5f2a683",
+ "final_thresholds_sha256": "e774c627f97c16bc3b4747ca152ab2c7409e8808b9c73fd27a87c347e47e1fb5",
+ "tau_final": {
+  "0.01": {
+   "tau": 0.033895809434983715,
+   "tau_hex": "0x1.15acaa1fd49c0p-5"
+  },
+  "0.05": {
+   "tau": 0.0033036312037174214,
+   "tau_hex": "0x1.b10377f4bdea5p-9"
+  }
+ },
+ "tb_results_sha256": "307b99ca59ba335bb48bf436f6252c419d9c4160e592ac6a2cea7c328ee9cc60",
+ "tb_ledger_sha256": "58c5e778ed26974d48997e00c74a5d7a2d7f703092f252687aec9153bb0d0145",
+ "p1_ta_results_sha256": "327da5c729c9235fe037b9bd7c311f57cb66bea52a0625a9e937df919d7fab93"
+}

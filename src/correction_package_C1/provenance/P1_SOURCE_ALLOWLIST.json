@@ -1,0 +1,43 @@
+{
+ "description": "Stage 02A-1 source allow-list. P1 = training-permitted; forbidden = known files that must never be used for fitting.",
+ "source": "STAGE02A_0_DATASET_AUDIT/02_ARCHIVE_INTEGRITY_AND_CHECKSUMS.csv",
+ "P1": {
+  "ebd499e6f23bd59f9cb81bec28178491b02b925fa5640a24215c9437d79482d0": {
+   "day": "Fri",
+   "file": "friday.csv",
+   "bytes": 285188226
+  },
+  "51fe5dc962626efb4ae70dce0303072fb780da0932822b651202ee9c2fbc1aff": {
+   "day": "Mon",
+   "file": "monday.csv",
+   "bytes": 207875155
+  },
+  "78a4d11eaf473d099e30e71ddb01e0f38218e844c0a9cdd36602145d674af482": {
+   "day": "Thu",
+   "file": "thursday.csv",
+   "bytes": 189519159
+  },
+  "e2a0a5b631dfc6b455cc9f9a88b944110637d70a7f74171473925f76f38b6b0c": {
+   "day": "Tue",
+   "file": "tuesday.csv",
+   "bytes": 178397720
+  },
+  "bf46c5f3c792e8817381f724511229569606918eaf07ac986d7a2592b6341bc2": {
+   "day": "Wed",
+   "file": "wednesday.csv",
+   "bytes": 291290505
+  }
+ },
+ "forbidden": {
+  "a16b76a454a25fa4fd84c320f32e3164b22c09f537be3e77450ddeb2168a7622": {
+   "partition": "P2",
+   "file": "Friday-16-02-2018.csv",
+   "bytes": 4211741805
+  },
+  "4ceed4ba26973004e3a86ae0c57d6a4ddd9742f1b222f44209cd7c1c48618fdb": {
+   "partition": "P2",
+   "file": "Wednesday-14-02-2018.csv",
+   "bytes": 3262583806
+  }
+ }
+}

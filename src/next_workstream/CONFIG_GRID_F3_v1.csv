@@ -1,0 +1,23 @@
+# CONFIG GRID F3 v1 (FROZEN on creation 2026-11-04 by advisor F3 decision; SHA-256 in FREEZE_LOG entry F3)
+# Derived from CONFIG_GRID_F3_PROPOSED.csv (preserved unchanged): all 11 proposed configurations kept with identical hyperparameters;
+#   ONE configuration added: HGB-05 = scikit-learn 1.9.0 HistGradientBoostingClassifier reference (library defaults max_iter=100,
+#   max_leaf_nodes=31, learning_rate=0.1, min_samples_leaf=20, ...), every hyperparameter explicit; early_stopping=False and
+#   random_state=20261104 override the library defaults ('auto' / None) as required by the frozen leakage and determinism controls.
+# Library: scikit-learn 1.9.0 only. Threads: n_jobs=4 where applicable. Total configurations: 12 (LR 3, HGB 5, RF 4).
+# COMPLEXITY ORDERING RULE (unchanged, declared before any training): family first, LR < HGB < RF; within LR increasing C;
+#   within HGB increasing (max_iter x max_leaf_nodes) leaf budget; within RF lexicographic (max_depth, n_estimators).
+# complexity_rank is used ONLY to break bitwise-exact mAP_day ties (CV spec v2 section 3.3). config_id values are stable labels, not ranks.
+# Primary selection criterion unchanged: mAP_day = mean(AP_Tue, AP_Wed, AP_Thu, AP_Fri); Monday benign-only, AP undefined.
+complexity_rank,config_id,family,estimator,hyperparameters_json,preprocessing_variant
+1,LR-01,LR,sklearn.linear_model.LogisticRegression,"{""C"": 0.01, ""l1_ratio"": 0, ""solver"": ""lbfgs"", ""max_iter"": 2000, ""tol"": 1e-4, ""class_weight"": null}",P-LR
+2,LR-02,LR,sklearn.linear_model.LogisticRegression,"{""C"": 0.1, ""l1_ratio"": 0, ""solver"": ""lbfgs"", ""max_iter"": 2000, ""tol"": 1e-4, ""class_weight"": null}",P-LR
+3,LR-03,LR,sklearn.linear_model.LogisticRegression,"{""C"": 1.0, ""l1_ratio"": 0, ""solver"": ""lbfgs"", ""max_iter"": 2000, ""tol"": 1e-4, ""class_weight"": null}",P-LR
+4,HGB-01,HGB,sklearn.ensemble.HistGradientBoostingClassifier,"{""max_iter"": 100, ""max_leaf_nodes"": 15, ""learning_rate"": 0.1, ""min_samples_leaf"": 20, ""l2_regularization"": 0.0, ""max_bins"": 255, ""early_stopping"": false, ""class_weight"": null, ""random_state"": 20261104}",P-TREE
+5,HGB-05,HGB,sklearn.ensemble.HistGradientBoostingClassifier,"{""loss"": ""log_loss"", ""learning_rate"": 0.1, ""max_iter"": 100, ""max_leaf_nodes"": 31, ""max_depth"": null, ""min_samples_leaf"": 20, ""l2_regularization"": 0.0, ""max_features"": 1.0, ""max_bins"": 255, ""categorical_features"": null, ""monotonic_cst"": null, ""interaction_cst"": null, ""warm_start"": false, ""early_stopping"": false, ""scoring"": ""loss"", ""validation_fraction"": 0.1, ""n_iter_no_change"": 10, ""tol"": 1e-07, ""verbose"": 0, ""random_state"": 20261104, ""class_weight"": null}",P-TREE
+6,HGB-02,HGB,sklearn.ensemble.HistGradientBoostingClassifier,"{""max_iter"": 300, ""max_leaf_nodes"": 15, ""learning_rate"": 0.1, ""min_samples_leaf"": 20, ""l2_regularization"": 0.0, ""max_bins"": 255, ""early_stopping"": false, ""class_weight"": null, ""random_state"": 20261104}",P-TREE
+7,HGB-03,HGB,sklearn.ensemble.HistGradientBoostingClassifier,"{""max_iter"": 100, ""max_leaf_nodes"": 63, ""learning_rate"": 0.1, ""min_samples_leaf"": 20, ""l2_regularization"": 0.0, ""max_bins"": 255, ""early_stopping"": false, ""class_weight"": null, ""random_state"": 20261104}",P-TREE
+8,HGB-04,HGB,sklearn.ensemble.HistGradientBoostingClassifier,"{""max_iter"": 300, ""max_leaf_nodes"": 63, ""learning_rate"": 0.1, ""min_samples_leaf"": 20, ""l2_regularization"": 0.0, ""max_bins"": 255, ""early_stopping"": false, ""class_weight"": null, ""random_state"": 20261104}",P-TREE
+9,RF-01,RF,sklearn.ensemble.RandomForestClassifier,"{""n_estimators"": 100, ""max_depth"": 12, ""min_samples_leaf"": 20, ""max_features"": ""sqrt"", ""bootstrap"": true, ""max_samples"": 0.5, ""class_weight"": null, ""n_jobs"": 4, ""random_state"": 20261104}",P-TREE
+10,RF-02,RF,sklearn.ensemble.RandomForestClassifier,"{""n_estimators"": 200, ""max_depth"": 12, ""min_samples_leaf"": 20, ""max_features"": ""sqrt"", ""bootstrap"": true, ""max_samples"": 0.5, ""class_weight"": null, ""n_jobs"": 4, ""random_state"": 20261104}",P-TREE
+11,RF-03,RF,sklearn.ensemble.RandomForestClassifier,"{""n_estimators"": 100, ""max_depth"": 20, ""min_samples_leaf"": 20, ""max_features"": ""sqrt"", ""bootstrap"": true, ""max_samples"": 0.5, ""class_weight"": null, ""n_jobs"": 4, ""random_state"": 20261104}",P-TREE
+12,RF-04,RF,sklearn.ensemble.RandomForestClassifier,"{""n_estimators"": 200, ""max_depth"": 20, ""min_samples_leaf"": 20, ""max_features"": ""sqrt"", ""bootstrap"": true, ""max_samples"": 0.5, ""class_weight"": null, ""n_jobs"": 4, ""random_state"": 20261104}",P-TREE

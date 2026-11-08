@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Never commit data or row-level artefacts (third-party datasets; row-level files contain IP addresses)
+*.csv.deflate
+*.zip
+*.parquet
+*.npy
+*.npz
+*.joblib
+*.pkl
+IDS_RAW_DATA_STAGE02A0/
+
+# Run-time machine-specific logs and evidence written by the runners
+*_console.log
+**/LAUNCHER_STATUS
+**/RUN_EVENTS.jsonl
+**/PREFLIGHT_PAUSES.jsonl
+**/AUTHORIZATION.json
+**/INTENT.json
+**/evidence/
+**/preflight_probes/
+**/scores/
+

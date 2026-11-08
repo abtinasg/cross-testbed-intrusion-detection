@@ -1,0 +1,15 @@
+{
+ "utc": "2026-11-07T13:39:05Z",
+ "reason": "FIT_FAILURE_FIT_ERROR",
+ "detail": {
+  "key": [
+   "RF-03",
+   "Fri",
+   "Tue"
+  ],
+  "failure_class": "MEASUREMENT_UNAVAILABLE",
+  "error": "pid 6293: NoSuchProcess: process no longer exists (pid=6293)",
+  "checks": []
+ },
+ "note": "No retry. A separate recorded decision is required before any further T-b fit."
+}

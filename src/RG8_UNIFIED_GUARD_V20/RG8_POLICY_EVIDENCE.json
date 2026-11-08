@@ -1,0 +1,1008 @@
+{
+ "jobs": {
+  "HGB-01:V0": {
+   "source": "campaign_1 (RSS only)",
+   "status": "OK",
+   "rss": 1.57,
+   "footprint": null,
+   "swap_growth": 0.908,
+   "A_start": 1.629,
+   "min_available": 1.179,
+   "elapsed_s": 132.5,
+   "max_pressure": 2
+  },
+  "HGB-01:V1": {
+   "source": "campaign_1 (RSS only)",
+   "status": "OK",
+   "rss": 1.879,
+   "footprint": null,
+   "swap_growth": 0.0,
+   "A_start": 2.506,
+   "min_available": 1.383,
+   "elapsed_s": 130.9,
+   "max_pressure": 2
+  },
+  "LR-01:V1": {
+   "source": "campaign_1 (RSS only)",
+   "status": "OK",
+   "rss": 2.393,
+   "footprint": null,
+   "swap_growth": 0.154,
+   "A_start": 2.587,
+   "min_available": 1.178,
+   "elapsed_s": 118.4,
+   "max_pressure": 2
+  },
+  "LR-02:V1": {
+   "source": "campaign_1 (RSS only)",
+   "status": "OK",
+   "rss": 2.231,
+   "footprint": null,
+   "swap_growth": 0.055,
+   "A_start": 2.69,
+   "min_available": 1.225,
+   "elapsed_s": 120.1,
+   "max_pressure": 2
+  },
+  "LR-03:V1": {
+   "source": "campaign_1 (RSS only)",
+   "status": "OK",
+   "rss": 2.327,
+   "footprint": null,
+   "swap_growth": 0.028,
+   "A_start": 3.235,
+   "min_available": 1.209,
+   "elapsed_s": 125.3,
+   "max_pressure": 2
+  },
+  "HGB-05:V1": {
+   "source": "campaign_1 (RSS only)",
+   "status": "OK",
+   "rss": 2.064,
+   "footprint": null,
+   "swap_growth": 0.0,
+   "A_start": 3.024,
+   "min_available": 1.537,
+   "elapsed_s": 133.4,
+   "max_pressure": 1
+  },
+  "HGB-02:V1": {
+   "source": "campaign_1 (RSS only)",
+   "status": "OK",
+   "rss": 1.915,
+   "footprint": null,
+   "swap_growth": 0.0,
+   "A_start": 2.434,
+   "min_available": 1.313,
+   "elapsed_s": 158.3,
+   "max_pressure": 2
+  },
+  "HGB-03:V1": {
+   "source": "completion_attempt_2 (G2-C)",
+   "status": "OK",
+   "rss": 1.849,
+   "footprint": 2.097,
+   "swap_growth": 0.53,
+   "A_start": 1.55,
+   "min_available": 1.245,
+   "elapsed_s": 142.464,
+   "max_pressure": 2,
+   "threads": 17,
+   "cpu_percent": 729,
+   "survivors": [],
+   "fit_s": 23.0,
+   "predict_s": 0.2,
+   "model_info": {
+    "family": "HGB",
+    "child_daemon": false,
+    "n_jobs_param": null,
+    "joblib_effective_n_jobs": 1,
+    "n_iter": 100
+   },
+   "threadpools": [
+    {
+     "api": "openmp",
+     "n": 8
+    }
+   ],
+   "decomposition": {
+    "t_peak": 87.3,
+    "F_peak": 2.097,
+    "A_start": 1.547,
+    "A_at_peak": 1.281,
+    "A_min": 1.245,
+    "S_start": 1.133,
+    "dF": 2.064,
+    "dA": 0.267,
+    "dS": 0.53,
+    "unexplained": 1.268,
+    "pressure_levels": [
+     1,
+     2
+    ],
+    "critical_samples": 0,
+    "n_samples": 141
+   },
+   "host_before": null,
+   "host_after": null
+  },
+  "HGB-04:V1": {
+   "source": "completion_attempt_2 (G2-C)",
+   "status": "OK",
+   "rss": 1.792,
+   "footprint": 2.094,
+   "swap_growth": 0.304,
+   "A_start": 2.246,
+   "min_available": 1.245,
+   "elapsed_s": 173.6,
+   "max_pressure": 2,
+   "threads": 17,
+   "cpu_percent": 704,
+   "survivors": [],
+   "fit_s": 58.7,
+   "predict_s": 0.7,
+   "model_info": {
+    "family": "HGB",
+    "child_daemon": false,
+    "n_jobs_param": null,
+    "joblib_effective_n_jobs": 1,
+    "n_iter": 300
+   },
+   "threadpools": [
+    {
+     "api": "openmp",
+     "n": 8
+    }
+   ],
+   "decomposition": {
+    "t_peak": 83.9,
+    "F_peak": 2.094,
+    "A_start": 2.243,
+    "A_at_peak": 1.452,
+    "A_min": 1.245,
+    "S_start": 1.557,
+    "dF": 2.091,
+    "dA": 0.791,
+    "dS": 0.224,
+    "unexplained": 1.076,
+    "pressure_levels": [
+     1,
+     2
+    ],
+    "critical_samples": 0,
+    "n_samples": 171
+   },
+   "host_before": null,
+   "host_after": null
+  },
+  "RF-01:V1": {
+   "source": "completion_attempt_2 (G2-C)",
+   "status": "OK",
+   "rss": 1.707,
+   "footprint": 2.095,
+   "swap_growth": 0.0,
+   "A_start": 2.201,
+   "min_available": 1.306,
+   "elapsed_s": 247.772,
+   "max_pressure": 2,
+   "threads": 18,
+   "cpu_percent": 400,
+   "survivors": [],
+   "fit_s": 129.6,
+   "predict_s": 0.4,
+   "model_info": {
+    "family": "RF",
+    "child_daemon": false,
+    "n_jobs_param": 4,
+    "joblib_effective_n_jobs": 4,
+    "total_nodes": 92282,
+    "max_nodes": 1619,
+    "max_depth": 12,
+    "approx_model_bytes": 7382560
+   },
+   "threadpools": [
+    {
+     "api": "openmp",
+     "n": 8
+    }
+   ],
+   "decomposition": {
+    "t_peak": 85.1,
+    "F_peak": 2.095,
+    "A_start": 2.197,
+    "A_at_peak": 1.306,
+    "A_min": 1.306,
+    "S_start": 1.807,
+    "dF": 2.092,
+    "dA": 0.891,
+    "dS": -0.086,
+    "unexplained": 1.288,
+    "pressure_levels": [
+     1,
+     2
+    ],
+    "critical_samples": 0,
+    "n_samples": 244
+   },
+   "host_before": null,
+   "host_after": null
+  },
+  "RF-02:V1": {
+   "source": "completion_attempt_2 (G2-C)",
+   "status": "OK",
+   "rss": 1.812,
+   "footprint": 2.096,
+   "swap_growth": 0.369,
+   "A_start": 2.289,
+   "min_available": 1.227,
+   "elapsed_s": 386.028,
+   "max_pressure": 2,
+   "threads": 18,
+   "cpu_percent": 400,
+   "survivors": [],
+   "fit_s": 262.2,
+   "predict_s": 1.2,
+   "model_info": {
+    "family": "RF",
+    "child_daemon": false,
+    "n_jobs_param": 4,
+    "joblib_effective_n_jobs": 4,
+    "total_nodes": 183558,
+    "max_nodes": 1895,
+    "max_depth": 12,
+    "approx_model_bytes": 14684640
+   },
+   "threadpools": [
+    {
+     "api": "openmp",
+     "n": 8
+    }
+   ],
+   "decomposition": {
+    "t_peak": 87.2,
+    "F_peak": 2.096,
+    "A_start": 2.268,
+    "A_at_peak": 1.288,
+    "A_min": 1.227,
+    "S_start": 1.604,
+    "dF": 2.093,
+    "dA": 0.98,
+    "dS": 0.369,
+    "unexplained": 0.745,
+    "pressure_levels": [
+     1,
+     2
+    ],
+    "critical_samples": 0,
+    "n_samples": 379
+   },
+   "host_before": null,
+   "host_after": null
+  },
+  "RF-03:V1": {
+   "source": "completion_attempt_2 (G2-C)",
+   "status": "OK",
+   "rss": 1.793,
+   "footprint": 2.097,
+   "swap_growth": 0.217,
+   "A_start": 1.952,
+   "min_available": 1.234,
+   "elapsed_s": 308.392,
+   "max_pressure": 2,
+   "threads": 18,
+   "cpu_percent": 401,
+   "survivors": [],
+   "fit_s": 187.4,
+   "predict_s": 0.7,
+   "model_info": {
+    "family": "RF",
+    "child_daemon": false,
+    "n_jobs_param": 4,
+    "joblib_effective_n_jobs": 4,
+    "total_nodes": 578986,
+    "max_nodes": 11615,
+    "max_depth": 20,
+    "approx_model_bytes": 46318880
+   },
+   "threadpools": [
+    {
+     "api": "openmp",
+     "n": 8
+    }
+   ],
+   "decomposition": {
+    "t_peak": 87.0,
+    "F_peak": 2.097,
+    "A_start": 1.974,
+    "A_at_peak": 1.263,
+    "A_min": 1.234,
+    "S_start": 1.8,
+    "dF": 2.067,
+    "dA": 0.712,
+    "dS": 0.217,
+    "unexplained": 1.139,
+    "pressure_levels": [
+     2
+    ],
+    "critical_samples": 0,
+    "n_samples": 304
+   },
+   "host_before": null,
+   "host_after": null
+  },
+  "RF-04:V1": {
+   "source": "completion_attempt_2 (G2-C)",
+   "status": "OK",
+   "rss": 1.768,
+   "footprint": 2.094,
+   "swap_growth": 0.053,
+   "A_start": 2.385,
+   "min_available": 1.284,
+   "elapsed_s": 472.379,
+   "max_pressure": 2,
+   "threads": 18,
+   "cpu_percent": 402,
+   "survivors": [],
+   "fit_s": 355.7,
+   "predict_s": 1.3,
+   "model_info": {
+    "family": "RF",
+    "child_daemon": false,
+    "n_jobs_param": 4,
+    "joblib_effective_n_jobs": 4,
+    "total_nodes": 1146298,
+    "max_nodes": 11615,
+    "max_depth": 20,
+    "approx_model_bytes": 91703840
+   },
+   "threadpools": [
+    {
+     "api": "openmp",
+     "n": 8
+    }
+   ],
+   "decomposition": {
+    "t_peak": 83.3,
+    "F_peak": 2.094,
+    "A_start": 2.384,
+    "A_at_peak": 1.284,
+    "A_min": 1.284,
+    "S_start": 1.978,
+    "dF": 2.092,
+    "dA": 1.1,
+    "dS": 0.053,
+    "unexplained": 0.939,
+    "pressure_levels": [
+     1,
+     2
+    ],
+    "critical_samples": 0,
+    "n_samples": 466
+   },
+   "host_before": null,
+   "host_after": null
+  },
+  "RF-04:V0": {
+   "source": "completion_attempt_2 (G2-C)",
+   "status": "OK",
+   "rss": 1.107,
+   "footprint": 3.696,
+   "swap_growth": 1.073,
+   "A_start": 1.544,
+   "min_available": 1.231,
+   "elapsed_s": 529.257,
+   "max_pressure": 2,
+   "threads": 18,
+   "cpu_percent": 399,
+   "survivors": [],
+   "fit_s": 404.1,
+   "predict_s": 1.6,
+   "model_info": {
+    "family": "RF",
+    "child_daemon": false,
+    "n_jobs_param": 4,
+    "joblib_effective_n_jobs": 4,
+    "total_nodes": 1146298,
+    "max_nodes": 11615,
+    "max_depth": 20,
+    "approx_model_bytes": 91703840
+   },
+   "threadpools": [
+    {
+     "api": "openmp",
+     "n": 8
+    }
+   ],
+   "decomposition": {
+    "t_peak": 519.0,
+    "F_peak": 3.696,
+    "A_start": 1.544,
+    "A_at_peak": 1.488,
+    "A_min": 1.231,
+    "S_start": 1.922,
+    "dF": 3.694,
+    "dA": 0.056,
+    "dS": 0.955,
+    "unexplained": 2.683,
+    "pressure_levels": [
+     1,
+     2
+    ],
+    "critical_samples": 0,
+    "n_samples": 521
+   },
+   "host_before": null,
+   "host_after": null
+  },
+  "LR-01:V1 [FV1]": {
+   "source": "FV1 (G2-C)",
+   "status": "OK",
+   "rss": 1.741,
+   "footprint": 2.102,
+   "swap_growth": 1.321,
+   "A_start": 1.268,
+   "min_available": 1.139,
+   "elapsed_s": 168.621,
+   "max_pressure": 2,
+   "threads": 16,
+   "cpu_percent": 228,
+   "survivors": [],
+   "fit_s": 10.6,
+   "predict_s": 0.1,
+   "model_info": {
+    "family": "LR",
+    "child_daemon": false,
+    "n_jobs_param": null,
+    "joblib_effective_n_jobs": 1,
+    "n_iter": 22
+   },
+   "threadpools": [
+    {
+     "api": "openmp",
+     "n": 8
+    }
+   ],
+   "decomposition": {
+    "t_peak": 103.9,
+    "F_peak": 2.102,
+    "A_start": 1.265,
+    "A_at_peak": 1.159,
+    "A_min": 1.139,
+    "S_start": 3.084,
+    "dF": 2.099,
+    "dA": 0.106,
+    "dS": 0.946,
+    "unexplained": 1.047,
+    "pressure_levels": [
+     1,
+     2
+    ],
+    "critical_samples": 0,
+    "n_samples": 164
+   },
+   "host_before": {
+    "total": 8589934592,
+    "available": 1362984960,
+    "wired": 1876639744,
+    "active": 1314160640,
+    "inactive": 1211629568,
+    "free": 62128128,
+    "swap_total": 4294967296,
+    "swap_used": 3311271936,
+    "pressure_level": 2,
+    "disk_free": 57679556608,
+    "cpu_logical": 8,
+    "load_avg": [
+     7.173828125,
+     5.50830078125,
+     5.31689453125
+    ],
+    "compressor_occupied": 3454582784,
+    "compressor_stored": 12696190976
+   },
+   "host_after": {
+    "total": 8589934592,
+    "available": 2810593280,
+    "wired": 1814495232,
+    "active": 1180794880,
+    "inactive": 956727296,
+    "free": 1642676224,
+    "swap_total": 5368709120,
+    "swap_used": 4704174080,
+    "pressure_level": 1,
+    "disk_free": 56595554304,
+    "cpu_logical": 8,
+    "load_avg": [
+     6.73828125,
+     5.79248046875,
+     5.4482421875
+    ],
+    "compressor_occupied": 2194604032,
+    "compressor_stored": 12759744512
+   }
+  },
+  "LR-02:V1 [FV1]": {
+   "source": "FV1 (G2-C)",
+   "status": "OK",
+   "rss": 1.563,
+   "footprint": 2.089,
+   "swap_growth": 0.0,
+   "A_start": 2.618,
+   "min_available": 1.122,
+   "elapsed_s": 196.083,
+   "max_pressure": 2,
+   "threads": 16,
+   "cpu_percent": 236,
+   "survivors": [],
+   "fit_s": 12.2,
+   "predict_s": 0.1,
+   "model_info": {
+    "family": "LR",
+    "child_daemon": false,
+    "n_jobs_param": null,
+    "joblib_effective_n_jobs": 1,
+    "n_iter": 22
+   },
+   "threadpools": [
+    {
+     "api": "openmp",
+     "n": 8
+    }
+   ],
+   "decomposition": {
+    "t_peak": 98.8,
+    "F_peak": 2.089,
+    "A_start": 2.617,
+    "A_at_peak": 1.19,
+    "A_min": 1.122,
+    "S_start": 4.373,
+    "dF": 2.088,
+    "dA": 1.427,
+    "dS": -0.436,
+    "unexplained": 1.097,
+    "pressure_levels": [
+     1,
+     2
+    ],
+    "critical_samples": 0,
+    "n_samples": 190
+   },
+   "host_before": {
+    "total": 8589934592,
+    "available": 2810576896,
+    "wired": 1812529152,
+    "active": 1182400512,
+    "inactive": 956743680,
+    "free": 1642364928,
+    "swap_total": 5368709120,
+    "swap_used": 4704174080,
+    "pressure_level": 1,
+    "disk_free": 56595537920,
+    "cpu_logical": 8,
+    "load_avg": [
+     6.73828125,
+     5.79248046875,
+     5.4482421875
+    ],
+    "compressor_occupied": 2195406848,
+    "compressor_stored": 12758482944
+   },
+   "host_after": {
+    "total": 8589934592,
+    "available": 2589179904,
+    "wired": 1764343808,
+    "active": 1006977024,
+    "inactive": 788217856,
+    "free": 1591279616,
+    "swap_total": 5368709120,
+    "swap_used": 4520738816,
+    "pressure_level": 2,
+    "disk_free": 56651120640,
+    "cpu_logical": 8,
+    "load_avg": [
+     8.654296875,
+     7.15380859375,
+     6.05908203125
+    ],
+    "compressor_occupied": 2639888384,
+    "compressor_stored": 12775243776
+   }
+  },
+  "LR-03:V1 [FV1]": {
+   "source": "FV1 (G2-C)",
+   "status": "OK",
+   "rss": 1.829,
+   "footprint": 2.095,
+   "swap_growth": 0.313,
+   "A_start": 2.411,
+   "min_available": 1.191,
+   "elapsed_s": 142.355,
+   "max_pressure": 2,
+   "threads": 17,
+   "cpu_percent": 222,
+   "survivors": [],
+   "fit_s": 10.2,
+   "predict_s": 0.1,
+   "model_info": {
+    "family": "LR",
+    "child_daemon": false,
+    "n_jobs_param": null,
+    "joblib_effective_n_jobs": 1,
+    "n_iter": 22
+   },
+   "threadpools": [
+    {
+     "api": "openmp",
+     "n": 8
+    }
+   ],
+   "decomposition": {
+    "t_peak": 89.3,
+    "F_peak": 2.095,
+    "A_start": 2.411,
+    "A_at_peak": 1.2,
+    "A_min": 1.191,
+    "S_start": 4.202,
+    "dF": 2.094,
+    "dA": 1.211,
+    "dS": -0.219,
+    "unexplained": 1.102,
+    "pressure_levels": [
+     1,
+     2
+    ],
+    "critical_samples": 0,
+    "n_samples": 141
+   },
+   "host_before": {
+    "total": 8589934592,
+    "available": 2589179904,
+    "wired": 1764343808,
+    "active": 1006977024,
+    "inactive": 788217856,
+    "free": 1591279616,
+    "swap_total": 5368709120,
+    "swap_used": 4512350208,
+    "pressure_level": 2,
+    "disk_free": 56651186176,
+    "cpu_logical": 8,
+    "load_avg": [
+     8.654296875,
+     7.15380859375,
+     6.05908203125
+    ],
+    "compressor_occupied": 2640248832,
+    "compressor_stored": 12773752832
+   },
+   "host_after": {
+    "total": 8589934592,
+    "available": 3178201088,
+    "wired": 1797849088,
+    "active": 625950720,
+    "inactive": 1075036160,
+    "free": 1925971968,
+    "swap_total": 5368709120,
+    "swap_used": 4798152704,
+    "pressure_level": 1,
+    "disk_free": 56639270912,
+    "cpu_logical": 8,
+    "load_avg": [
+     5.9189453125,
+     6.40625,
+     5.90966796875
+    ],
+    "compressor_occupied": 2368323584,
+    "compressor_stored": 12639338496
+   }
+  },
+  "HGB-01:V1 [FV1]": {
+   "source": "FV1 (G2-C)",
+   "status": "OK",
+   "rss": 1.829,
+   "footprint": 2.097,
+   "swap_growth": 0.0,
+   "A_start": 2.96,
+   "min_available": 1.375,
+   "elapsed_s": 134.961,
+   "max_pressure": 2,
+   "threads": 17,
+   "cpu_percent": 706,
+   "survivors": [],
+   "fit_s": 20.4,
+   "predict_s": 0.2,
+   "model_info": {
+    "family": "HGB",
+    "child_daemon": false,
+    "n_jobs_param": null,
+    "joblib_effective_n_jobs": 1,
+    "n_iter": 100
+   },
+   "threadpools": [
+    {
+     "api": "openmp",
+     "n": 8
+    }
+   ],
+   "decomposition": {
+    "t_peak": 83.8,
+    "F_peak": 2.097,
+    "A_start": 2.96,
+    "A_at_peak": 1.375,
+    "A_min": 1.375,
+    "S_start": 4.469,
+    "dF": 2.095,
+    "dA": 1.585,
+    "dS": -0.273,
+    "unexplained": 0.784,
+    "pressure_levels": [
+     1,
+     2
+    ],
+    "critical_samples": 0,
+    "n_samples": 134
+   },
+   "host_before": {
+    "total": 8589934592,
+    "available": 3178201088,
+    "wired": 1797849088,
+    "active": 625950720,
+    "inactive": 1075036160,
+    "free": 1925971968,
+    "swap_total": 5368709120,
+    "swap_used": 4798152704,
+    "pressure_level": 1,
+    "disk_free": 56639270912,
+    "cpu_logical": 8,
+    "load_avg": [
+     5.9189453125,
+     6.40625,
+     5.90966796875
+    ],
+    "compressor_occupied": 2368503808,
+    "compressor_stored": 12638355456
+   },
+   "host_after": {
+    "total": 8589934592,
+    "available": 2570846208,
+    "wired": 1661894656,
+    "active": 1408745472,
+    "inactive": 1329512448,
+    "free": 1164640256,
+    "swap_total": 5368709120,
+    "swap_used": 4395433984,
+    "pressure_level": 1,
+    "disk_free": 56642375680,
+    "cpu_logical": 8,
+    "load_avg": [
+     4.9365234375,
+     5.6708984375,
+     5.67529296875
+    ],
+    "compressor_occupied": 2359820288,
+    "compressor_stored": 11893243904
+   }
+  },
+  "HGB-02:V1 [FV1]": {
+   "source": "FV1 (G2-C)",
+   "status": "OK",
+   "rss": 1.726,
+   "footprint": 2.097,
+   "swap_growth": 0.006,
+   "A_start": 2.392,
+   "min_available": 1.193,
+   "elapsed_s": 167.818,
+   "max_pressure": 2,
+   "threads": 17,
+   "cpu_percent": 635,
+   "survivors": [],
+   "fit_s": 51.2,
+   "predict_s": 0.7,
+   "model_info": {
+    "family": "HGB",
+    "child_daemon": false,
+    "n_jobs_param": null,
+    "joblib_effective_n_jobs": 1,
+    "n_iter": 300
+   },
+   "threadpools": [
+    {
+     "api": "openmp",
+     "n": 8
+    }
+   ],
+   "decomposition": {
+    "t_peak": 84.1,
+    "F_peak": 2.097,
+    "A_start": 2.395,
+    "A_at_peak": 1.193,
+    "A_min": 1.193,
+    "S_start": 4.094,
+    "dF": 2.096,
+    "dA": 1.201,
+    "dS": -0.0,
+    "unexplained": 0.895,
+    "pressure_levels": [
+     1,
+     2
+    ],
+    "critical_samples": 0,
+    "n_samples": 166
+   },
+   "host_before": {
+    "total": 8589934592,
+    "available": 2571108352,
+    "wired": 1659928576,
+    "active": 1410482176,
+    "inactive": 1329102848,
+    "free": 1165148160,
+    "swap_total": 5368709120,
+    "swap_used": 4395433984,
+    "pressure_level": 1,
+    "disk_free": 56642367488,
+    "cpu_logical": 8,
+    "load_avg": [
+     4.9365234375,
+     5.6708984375,
+     5.67529296875
+    ],
+    "compressor_occupied": 2359459840,
+    "compressor_stored": 11892211712
+   },
+   "host_after": {
+    "total": 8589934592,
+    "available": 2137047040,
+    "wired": 1752399872,
+    "active": 1500299264,
+    "inactive": 1442627584,
+    "free": 508280832,
+    "swap_total": 5368709120,
+    "swap_used": 4250861568,
+    "pressure_level": 2,
+    "disk_free": 56634486784,
+    "cpu_logical": 8,
+    "load_avg": [
+     11.02880859375,
+     6.859375,
+     6.076171875
+    ],
+    "compressor_occupied": 2610216960,
+    "compressor_stored": 11922128896
+   }
+  },
+  "HGB-05:V1 [FV1]": {
+   "source": "FV1 (G2-C)",
+   "status": "OK",
+   "rss": 1.607,
+   "footprint": 2.099,
+   "swap_growth": 0.052,
+   "A_start": 1.99,
+   "min_available": 1.198,
+   "elapsed_s": 148.149,
+   "max_pressure": 2,
+   "threads": 17,
+   "cpu_percent": 599,
+   "survivors": [],
+   "fit_s": 26.8,
+   "predict_s": 0.3,
+   "model_info": {
+    "family": "HGB",
+    "child_daemon": false,
+    "n_jobs_param": null,
+    "joblib_effective_n_jobs": 1,
+    "n_iter": 100
+   },
+   "threadpools": [
+    {
+     "api": "openmp",
+     "n": 8
+    }
+   ],
+   "decomposition": {
+    "t_peak": 85.2,
+    "F_peak": 2.099,
+    "A_start": 1.99,
+    "A_at_peak": 1.264,
+    "A_min": 1.198,
+    "S_start": 3.959,
+    "dF": 2.098,
+    "dA": 0.725,
+    "dS": 0.052,
+    "unexplained": 1.321,
+    "pressure_levels": [
+     1,
+     2
+    ],
+    "critical_samples": 0,
+    "n_samples": 145
+   },
+   "host_before": {
+    "total": 8589934592,
+    "available": 2136424448,
+    "wired": 1752449024,
+    "active": 1501954048,
+    "inactive": 1442529280,
+    "free": 507150336,
+    "swap_total": 5368709120,
+    "swap_used": 4250861568,
+    "pressure_level": 2,
+    "disk_free": 56634490880,
+    "cpu_logical": 8,
+    "load_avg": [
+     11.02880859375,
+     6.859375,
+     6.076171875
+    ],
+    "compressor_occupied": 2609905664,
+    "compressor_stored": 11921047552
+   },
+   "host_after": {
+    "total": 8589934592,
+    "available": 2000175104,
+    "wired": 1743503360,
+    "active": 1582759936,
+    "inactive": 1404977152,
+    "free": 382451712,
+    "swap_total": 5368709120,
+    "swap_used": 4250599424,
+    "pressure_level": 2,
+    "disk_free": 56619700224,
+    "cpu_logical": 8,
+    "load_avg": [
+     12.61962890625,
+     8.14501953125,
+     6.6591796875
+    ],
+    "compressor_occupied": 2673590272,
+    "compressor_stored": 12131368960
+   }
+  }
+ },
+ "footprint_measured_jobs": 13,
+ "v1_configs_with_footprint": [
+  "HGB-01",
+  "HGB-02",
+  "HGB-03",
+  "HGB-04",
+  "HGB-05",
+  "LR-01",
+  "LR-02",
+  "LR-03",
+  "RF-01",
+  "RF-02",
+  "RF-03",
+  "RF-04"
+ ],
+ "max_footprint_v1": 2.102,
+ "max_footprint_any": 3.696,
+ "max_swap_growth_any": 1.321,
+ "max_swap_growth_job": "LR-01:V1 [FV1]",
+ "max_elapsed_s": 529.257,
+ "min_available_any": 1.122,
+ "A_start_all": [
+  1.268,
+  1.544,
+  1.55,
+  1.629,
+  1.952,
+  1.99,
+  2.201,
+  2.246,
+  2.289,
+  2.385,
+  2.392,
+  2.411,
+  2.434,
+  2.506,
+  2.587,
+  2.618,
+  2.69,
+  2.96,
+  3.024,
+  3.235
+ ],
+ "critical_pressure_samples": 0,
+ "unexplained_range": [
+  0.745,
+  2.683
+ ]
+}

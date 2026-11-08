@@ -1,0 +1,22 @@
+{
+ "utc": "2026-11-07T09:46:48Z",
+ "key": [
+  "LR-02",
+  "Tue"
+ ],
+ "token": "GO-RECOVER-LR02-TUE-628ee37f48e1",
+ "attempt": 2,
+ "attempt_id": "98ee6d6f79d6497493d6e0f64ebface7",
+ "authorised_by": "owner: IDS FAST-TRACK ONE-TIME RECOVERY AUTHORIZATION",
+ "replaces": {
+  "ledger_line": 2,
+  "ledger_line_sha256": "beee07e2374b42a4fdf439f057c96655084fb2ede1cda4ede0efbebc5935dec5",
+  "status": "WRAPPER_ERROR",
+  "error": "Terminated: signal SIGTERM"
+ },
+ "stopped_archived_as": "STOPPED_LR-02__Tue__attempt1.json",
+ "stopped_sha256": "628ee37f48e1341970ff6f94352b9f79662a9129e55caf2839ba51d1bab48faf",
+ "attempt1_evidence_dir_kept": "evidence/LR-02__Tue",
+ "attempt2_evidence_dir": "evidence/LR-02__Tue__attempt2",
+ "rule": "exactly one recovery attempt; any failure of attempt 2 stops the CV with no further retry"
+}

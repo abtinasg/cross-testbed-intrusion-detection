@@ -1,0 +1,239 @@
+{
+ "protocol": "A1 one-fit real-P1 smoke",
+ "utc_start": "2026-11-06T22:29:01Z",
+ "policy_id": "RG8-A1-SMOKE-8GB-v1",
+ "policy_sha256": "76406993e7d4d565837a5ed34785badabc4db926d4ac75e9508bcd80f49a21c3",
+ "validation": {
+  "policy": {
+   "id": "RG8-A1-SMOKE-8GB-v1",
+   "sha256": "76406993e7d4d565837a5ed34785badabc4db926d4ac75e9508bcd80f49a21c3",
+   "pinned": true
+  },
+  "environment": {
+   "ok": true,
+   "checks": {
+    "executable": true,
+    "python": true,
+    "numpy": true,
+    "sklearn": true,
+    "psutil": true,
+    "isolated": true
+   },
+   "got": {
+    "executable": "<PINNED_INTERPRETER:anaconda3/bin/python3.13>",
+    "python": "3.13.5",
+    "numpy": "2.4.6",
+    "sklearn": "1.9.0",
+    "psutil": "5.9.0",
+    "isolated": true
+   }
+  },
+  "f3": {
+   "config_id": "LR-01",
+   "config_sha256": "cbb6a0df6b71f048f703871910be352b51cee587055a5792836b052888ac9373",
+   "branch": "LR",
+   "family": "LR"
+  },
+  "p1_files": {
+   "Fri": "friday.csv",
+   "Mon": "monday.csv",
+   "Thu": "thursday.csv",
+   "Tue": "tuesday.csv",
+   "Wed": "wednesday.csv"
+  },
+  "expected_rows": {
+   "n_train": 1777898,
+   "n_val": 322078
+  }
+ },
+ "watched_processes_running": "<redacted: local process list>",
+ "preflight": {
+  "ok": true,
+  "checks": {
+   "sensors_ok": true,
+   "installed_ram_ok": true,
+   "pressure_ok": true,
+   "available_ok": true,
+   "disk_ok": true,
+   "locks_free": true
+  },
+  "measurements": {
+   "installed_ram": 8589934592,
+   "pressure": 1,
+   "available": 3221962752,
+   "swap_used": 631439360,
+   "disk_free": 59288805376,
+   "own_footprint": 116607040,
+   "own_rss": 202555392
+  },
+  "utc": "2026-11-06T22:29:01Z",
+  "attempts": 1,
+  "first": {
+   "ok": true,
+   "checks": {
+    "sensors_ok": true,
+    "installed_ram_ok": true,
+    "pressure_ok": true,
+    "available_ok": true,
+    "disk_ok": true,
+    "locks_free": true
+   },
+   "measurements": {
+    "installed_ram": 8589934592,
+    "pressure": 1,
+    "available": 3221962752,
+    "swap_used": 631439360,
+    "disk_free": 59288805376,
+    "own_footprint": 116607040,
+    "own_rss": 202555392
+   },
+   "utc": "2026-11-06T22:29:01Z"
+  }
+ },
+ "guard": {
+  "status": "OK",
+  "failure_class": null,
+  "error": null,
+  "stage_at_end": "job_returned",
+  "elapsed_s": 117.305,
+  "worker_pid": 8519,
+  "worker_daemon": false,
+  "descendants_seen": 0,
+  "survivors": [],
+  "samples": 232,
+  "swap_at_start": 631439360,
+  "peak_tree_rss": 3060072448,
+  "peak_tree_footprint": 2354075968,
+  "peak_tree_mem": 3060072448,
+  "peak_swap_growth": 0,
+  "max_procs": 1,
+  "max_threads": 17,
+  "min_available": 2753036288,
+  "min_disk_free": 58043195392,
+  "max_pressure": 1,
+  "policy_id": "RG8-A1-SMOKE-8GB-v1",
+  "policy_sha256": "76406993e7d4d565837a5ed34785badabc4db926d4ac75e9508bcd80f49a21c3",
+  "policy_pinned": true,
+  "guard_version": "RG8-unified-guard-1.1 (V21: post-start cleanup repair)"
+ },
+ "checks_after_fit": [],
+ "job": {
+  "config_id": "LR-01",
+  "config_sha256": "cbb6a0df6b71f048f703871910be352b51cee587055a5792836b052888ac9373",
+  "outer": "Tue",
+  "branch": "LR",
+  "profile": "P1",
+  "n_train": 1777898,
+  "n_val": 322078,
+  "n_model_columns": 87,
+  "n_pos": 6933,
+  "n_neg": 315145,
+  "ap_heldout": 0.011068836655164718,
+  "prevalence": 0.021525841566328655,
+  "n_iter": 80,
+  "max_iter": 2000,
+  "converged": true,
+  "fit_warnings": [],
+  "fit_s": 10.25,
+  "predict_s": 0.03,
+  "total_s": 115.8,
+  "marks": [
+   {
+    "stage": "start",
+    "t": 0.02,
+    "rss": 171524096,
+    "maxrss": 173916160
+   },
+   {
+    "stage": "loaded_training_days",
+    "t": 76.02,
+    "rss": 1383268352,
+    "maxrss": 1383268352
+   },
+   {
+    "stage": "assembled",
+    "t": 77.36,
+    "rss": 1375305728,
+    "maxrss": 2385035264
+   },
+   {
+    "stage": "preprocessing_fitted",
+    "t": 83.21,
+    "rss": 1452687360,
+    "maxrss": 2385035264
+   },
+   {
+    "stage": "train_transformed_to_disk_raw_released",
+    "t": 91.18,
+    "rss": 372113408,
+    "maxrss": 2844884992
+   },
+   {
+    "stage": "validation_loaded_transformed",
+    "t": 105.16,
+    "rss": 629997568,
+    "maxrss": 2844884992
+   },
+   {
+    "stage": "estimator_constructed",
+    "t": 105.38,
+    "rss": 639860736,
+    "maxrss": 2844884992
+   },
+   {
+    "stage": "model_fitted",
+    "t": 115.66,
+    "rss": 1822687232,
+    "maxrss": 3060105216
+   },
+   {
+    "stage": "predicted",
+    "t": 115.71,
+    "rss": 1822949376,
+    "maxrss": 3060105216
+   },
+   {
+    "stage": "scores_persisted",
+    "t": 115.74,
+    "rss": 1824342016,
+    "maxrss": 3060105216
+   },
+   {
+    "stage": "cleanup",
+    "t": 115.81,
+    "rss": 363167744,
+    "maxrss": 3060105216
+   }
+  ],
+  "temp_file_bytes": 1237417136,
+  "persisted": {
+   "scores": {
+    "file": "scores_LR-01_Tue.npy",
+    "sha256": "aa461d39da0e407fb7aa319b478aef78d2e11376105e016b839e02e6b3484ced",
+    "dtype": "float64",
+    "n": 322078
+   },
+   "labels": {
+    "file": "labels_LR-01_Tue.npy",
+    "sha256": "aebb3bd89fa02006ab5857dd4b86068f2b3c6d59c3c98d38cdceead4d963b3c7",
+    "dtype": "int8",
+    "n": 322078
+   },
+   "ids": {
+    "file": "row_ids_LR-01_Tue.npy",
+    "sha256": "9e6df97e7ded0aaef895482004023cccd08965420c07853c55ced4958e865a77",
+    "dtype": "int64",
+    "n": 322078
+   }
+  },
+  "threadpools": [
+   {
+    "api": "openmp",
+    "n": 8
+   }
+  ]
+ },
+ "status": "OK",
+ "utc_end": "2026-11-06T22:30:58Z",
+ "decision": "SMOKE PASSED: resource evidence for the real-data route recorded"
+}

@@ -1,0 +1,2713 @@
+{
+ "seal_sha256": "6b5d12ef166f95c55b9a1e52029ce1f3e6829d9dd34af3e0ff1913b646bff856",
+ "preregistration_sha256": "b781d24cfd34bc429fe96ea5fc35a0974e1fccb2b379910de4383439fb3a617f",
+ "tau": {
+  "0.01": {
+   "tau": 0.033895809434983715,
+   "tau_hex": "0x1.15acaa1fd49c0p-5"
+  },
+  "0.05": {
+   "tau": 0.0033036312037174214,
+   "tau_hex": "0x1.b10377f4bdea5p-9"
+  }
+ },
+ "q": 0.01,
+ "K": 500,
+ "b": [
+  100,
+  250,
+  500
+ ],
+ "days": {
+  "Wed14": {
+   "n_rows": 5898350,
+   "n_attack": 94197,
+   "prevalence": 0.01597005942339807,
+   "n_attempted": 193354,
+   "composition": [
+    {
+     "Label": "BENIGN",
+     "Attempted Category": -1,
+     "len": 5610799
+    },
+    {
+     "Label": "FTP-BruteForce - Attempted",
+     "Attempted Category": 1,
+     "len": 193324
+    },
+    {
+     "Label": "SSH-BruteForce",
+     "Attempted Category": -1,
+     "len": 94197
+    },
+    {
+     "Label": "FTP-BruteForce - Attempted",
+     "Attempted Category": 4,
+     "len": 30
+    }
+   ],
+   "n_hours": 13,
+   "n_distinct_scores": 207459,
+   "ap": 0.1760736631837132,
+   "roc_auc": 0.9642992476705003,
+   "attack_episode": {
+    "labels": [
+     "SSH-BruteForce"
+    ],
+    "note": "one attack label (one documented episode) per day: episode recall = day recall"
+   },
+   "tb": {
+    "0.01": {
+     "tau": 0.033895809434983715,
+     "achieved_fpr": 0.17395458045299633,
+     "benign_alerts": 1009659,
+     "n_benign": 5804153,
+     "recall": 1.0,
+     "tp": 94197,
+     "n_attack": 94197,
+     "precision": 0.08533450015219377,
+     "alerts_day": 1103856,
+     "alerts_per_hour_max": 211326,
+     "alerts_per_hour_median": 90070.0,
+     "benign_alerts_per_hour_max": 211326,
+     "per_hour": [
+      {
+       "hour": 421836,
+       "N": 372528,
+       "alerts": 49948,
+       "benign_alerts": 49948,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421837,
+       "N": 659461,
+       "alerts": 97028,
+       "benign_alerts": 97028,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421838,
+       "N": 705319,
+       "alerts": 144943,
+       "benign_alerts": 144943,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421839,
+       "N": 819974,
+       "alerts": 211326,
+       "benign_alerts": 211326,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421840,
+       "N": 508381,
+       "alerts": 111392,
+       "benign_alerts": 111392,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421841,
+       "N": 631233,
+       "alerts": 90070,
+       "benign_alerts": 90070,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421842,
+       "N": 679099,
+       "alerts": 148409,
+       "benign_alerts": 87996,
+       "attacks": 60413,
+       "tp": 60413
+      },
+      {
+       "hour": 421843,
+       "N": 656657,
+       "alerts": 121203,
+       "benign_alerts": 87419,
+       "attacks": 33784,
+       "tp": 33784
+      },
+      {
+       "hour": 421844,
+       "N": 628342,
+       "alerts": 84834,
+       "benign_alerts": 84834,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421845,
+       "N": 225909,
+       "alerts": 42560,
+       "benign_alerts": 42560,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421846,
+       "N": 7599,
+       "alerts": 1187,
+       "benign_alerts": 1187,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421847,
+       "N": 2655,
+       "alerts": 678,
+       "benign_alerts": 678,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421848,
+       "N": 1193,
+       "alerts": 278,
+       "benign_alerts": 278,
+       "attacks": 0,
+       "tp": 0
+      }
+     ],
+     "fpr_on_attempted_rows": 1.0,
+     "fpr_benign_label_only": 0.14548819161049967,
+     "sensitivity_target": {
+      "achieved_fpr": 0.14548819161049967,
+      "recall": 1.0,
+      "ap": 0.7059673549219936
+     }
+    },
+    "0.05": {
+     "tau": 0.0033036312037174214,
+     "achieved_fpr": 0.3458185888621475,
+     "benign_alerts": 2007184,
+     "n_benign": 5804153,
+     "recall": 1.0,
+     "tp": 94197,
+     "n_attack": 94197,
+     "precision": 0.04482623569928537,
+     "alerts_day": 2101381,
+     "alerts_per_hour_max": 333718,
+     "alerts_per_hour_median": 197503.0,
+     "benign_alerts_per_hour_max": 333718,
+     "per_hour": [
+      {
+       "hour": 421836,
+       "N": 372528,
+       "alerts": 108409,
+       "benign_alerts": 108409,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421837,
+       "N": 659461,
+       "alerts": 220170,
+       "benign_alerts": 220170,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421838,
+       "N": 705319,
+       "alerts": 270685,
+       "benign_alerts": 270685,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421839,
+       "N": 819974,
+       "alerts": 333718,
+       "benign_alerts": 333718,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421840,
+       "N": 508381,
+       "alerts": 197503,
+       "benign_alerts": 197503,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421841,
+       "N": 631233,
+       "alerts": 202741,
+       "benign_alerts": 202741,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421842,
+       "N": 679099,
+       "alerts": 258921,
+       "benign_alerts": 198508,
+       "attacks": 60413,
+       "tp": 60413
+      },
+      {
+       "hour": 421843,
+       "N": 656657,
+       "alerts": 236786,
+       "benign_alerts": 203002,
+       "attacks": 33784,
+       "tp": 33784
+      },
+      {
+       "hour": 421844,
+       "N": 628342,
+       "alerts": 188795,
+       "benign_alerts": 188795,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421845,
+       "N": 225909,
+       "alerts": 79483,
+       "benign_alerts": 79483,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421846,
+       "N": 7599,
+       "alerts": 2526,
+       "benign_alerts": 2526,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421847,
+       "N": 2655,
+       "alerts": 1172,
+       "benign_alerts": 1172,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421848,
+       "N": 1193,
+       "alerts": 472,
+       "benign_alerts": 472,
+       "attacks": 0,
+       "tp": 0
+      }
+     ],
+     "fpr_on_attempted_rows": 1.0,
+     "fpr_benign_label_only": 0.3232748134445736,
+     "sensitivity_target": {
+      "achieved_fpr": 0.3232748134445736,
+      "recall": 1.0,
+      "ap": 0.7059673549219936
+     }
+    }
+   },
+   "score_scale": {
+    "ks_p1_vs_p2_benign": 0.577196769351413,
+    "quantiles": {
+     "0.5": {
+      "p1_benign": 1.7590886860535243e-06,
+      "p2_benign": 0.00014480836413461952
+     },
+     "0.9": {
+      "p1_benign": 0.0003639633693954687,
+      "p2_benign": 0.07751021241977049
+     },
+     "0.99": {
+      "p1_benign": 0.033895514466057486,
+      "p2_benign": 0.9272209339777787
+     },
+     "0.999": {
+      "p1_benign": 0.318350197048452,
+      "p2_benign": 0.9985002268634056
+     }
+    }
+   },
+   "ta_q": {
+    "alerts": 58976,
+    "recall_flow": 0.1152690637706084,
+    "tp": 10858,
+    "n_attack": 94197,
+    "max_recall_given_quota": 0.14178795503041497,
+    "precision": 0.1841087900162778,
+    "fpr": 0.008290270776804127,
+    "benign_alerts": 48118,
+    "recall_hour_block_mean": 0.12490922603905011,
+    "n_hours": 13,
+    "n_attack_hours": 2,
+    "unused_capacity": 0,
+    "n_hours_with_omitted_group": 0,
+    "per_hour": [
+     {
+      "hour": 421836,
+      "N": 372528,
+      "quota": 3725,
+      "alerted": 3725,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421837,
+      "N": 659461,
+      "quota": 6594,
+      "alerted": 6594,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421838,
+      "N": 705319,
+      "quota": 7053,
+      "alerted": 7053,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421839,
+      "N": 819974,
+      "quota": 8199,
+      "alerted": 8199,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421840,
+      "N": 508381,
+      "quota": 5083,
+      "alerted": 5083,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421841,
+      "N": 631233,
+      "quota": 6312,
+      "alerted": 6312,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421842,
+      "N": 679099,
+      "quota": 6790,
+      "alerted": 6790,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 60413,
+      "tp": 5486
+     },
+     {
+      "hour": 421843,
+      "N": 656657,
+      "quota": 6566,
+      "alerted": 6566,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 33784,
+      "tp": 5372
+     },
+     {
+      "hour": 421844,
+      "N": 628342,
+      "quota": 6283,
+      "alerted": 6283,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421845,
+      "N": 225909,
+      "quota": 2259,
+      "alerted": 2259,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421846,
+      "N": 7599,
+      "quota": 75,
+      "alerted": 75,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421847,
+      "N": 2655,
+      "quota": 26,
+      "alerted": 26,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421848,
+      "N": 1193,
+      "quota": 11,
+      "alerted": 11,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     }
+    ]
+   },
+   "ta_K": {
+    "alerts": 6500,
+    "recall_flow": 0.0,
+    "tp": 0,
+    "n_attack": 94197,
+    "max_recall_given_quota": 0.010616049343397348,
+    "precision": 0.0,
+    "fpr": 0.0011198877769073281,
+    "benign_alerts": 6500,
+    "recall_hour_block_mean": 0.0,
+    "n_hours": 13,
+    "n_attack_hours": 2,
+    "unused_capacity": 0,
+    "n_hours_with_omitted_group": 0,
+    "per_hour": [
+     {
+      "hour": 421836,
+      "N": 372528,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421837,
+      "N": 659461,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421838,
+      "N": 705319,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421839,
+      "N": 819974,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421840,
+      "N": 508381,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421841,
+      "N": 631233,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421842,
+      "N": 679099,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 60413,
+      "tp": 0
+     },
+     {
+      "hour": 421843,
+      "N": 656657,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 33784,
+      "tp": 0
+     },
+     {
+      "hour": 421844,
+      "N": 628342,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421845,
+      "N": 225909,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421846,
+      "N": 7599,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421847,
+      "N": 2655,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421848,
+      "N": 1193,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     }
+    ]
+   },
+   "estimation": {
+    "b=100": {
+     "tb_alpha_0_01": {
+      "recall": {
+       "census": 1.0,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 1.0,
+       "bias": 0.0,
+       "rmse": 0.0,
+       "coverage_95": 1.0,
+       "mean_ci_width": 0.0
+      },
+      "fpr": {
+       "census": 0.17395458045299633,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.1736911162699509,
+       "bias": -0.00026346418304543096,
+       "rmse": 0.01244986864199922,
+       "coverage_95": 0.949,
+       "mean_ci_width": 0.049041884405088436
+      },
+      "labels_per_day": 1300,
+      "audited_attacks_mean": 14.09,
+      "p_zero_audited_attacks": 0.0,
+      "n_attack_hours": 2
+     },
+     "ta_q": {
+      "recall": {
+       "census": 0.1152690637706084,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.10862505519614132,
+       "bias": -0.006644008574467078,
+       "rmse": 0.08438893148515803,
+       "coverage_95": 0.796,
+       "mean_ci_width": 0.2799223889000348
+      },
+      "fpr": {
+       "census": 0.008290270776804127,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.008398849012278697,
+       "bias": 0.0001085782354745702,
+       "rmse": 0.0030413825572709096,
+       "coverage_95": 0.92,
+       "mean_ci_width": 0.01151113523237544
+      },
+      "labels_per_day": 1300,
+      "audited_attacks_mean": 14.112,
+      "p_zero_audited_attacks": 0.0,
+      "n_attack_hours": 2
+     }
+    },
+    "b=250": {
+     "tb_alpha_0_01": {
+      "recall": {
+       "census": 1.0,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 1.0,
+       "bias": 0.0,
+       "rmse": 0.0,
+       "coverage_95": 1.0,
+       "mean_ci_width": 0.0
+      },
+      "fpr": {
+       "census": 0.17395458045299633,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.17367568684211931,
+       "bias": -0.0002788936108770179,
+       "rmse": 0.007996529253607772,
+       "coverage_95": 0.946,
+       "mean_ci_width": 0.031015077030659362
+      },
+      "labels_per_day": 3250,
+      "audited_attacks_mean": 35.424,
+      "p_zero_audited_attacks": 0.0,
+      "n_attack_hours": 2
+     },
+     "ta_q": {
+      "recall": {
+       "census": 0.1152690637706084,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.11364291345003485,
+       "bias": -0.0016261503205735467,
+       "rmse": 0.05360820055530775,
+       "coverage_95": 0.898,
+       "mean_ci_width": 0.20176784170833972
+      },
+      "fpr": {
+       "census": 0.008290270776804127,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.008276126583694103,
+       "bias": -1.414419311002342e-05,
+       "rmse": 0.0019178282423993234,
+       "coverage_95": 0.928,
+       "mean_ci_width": 0.007318642142067377
+      },
+      "labels_per_day": 3250,
+      "audited_attacks_mean": 35.142,
+      "p_zero_audited_attacks": 0.0,
+      "n_attack_hours": 2
+     }
+    },
+    "b=500": {
+     "tb_alpha_0_01": {
+      "recall": {
+       "census": 1.0,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 1.0,
+       "bias": 0.0,
+       "rmse": 0.0,
+       "coverage_95": 1.0,
+       "mean_ci_width": 0.0
+      },
+      "fpr": {
+       "census": 0.17395458045299633,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.17371439296650165,
+       "bias": -0.0002401874864946807,
+       "rmse": 0.005329767111940078,
+       "coverage_95": 0.96,
+       "mean_ci_width": 0.02192764714297215
+      },
+      "labels_per_day": 6500,
+      "audited_attacks_mean": 70.284,
+      "p_zero_audited_attacks": 0.0,
+      "n_attack_hours": 2
+     },
+     "ta_q": {
+      "recall": {
+       "census": 0.1152690637706084,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.11536379204281941,
+       "bias": 9.472827221100599e-05,
+       "rmse": 0.03810253498370377,
+       "coverage_95": 0.927,
+       "mean_ci_width": 0.14713747797870444
+      },
+      "fpr": {
+       "census": 0.008290270776804127,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.008296724393830087,
+       "bias": 6.453617025959854e-06,
+       "rmse": 0.0012775575509383348,
+       "coverage_95": 0.961,
+       "mean_ci_width": 0.005200635049028202
+      },
+      "labels_per_day": 6500,
+      "audited_attacks_mean": 70.206,
+      "p_zero_audited_attacks": 0.0,
+      "n_attack_hours": 2
+     }
+    }
+   }
+  },
+  "Fri16": {
+   "n_rows": 7390266,
+   "n_attack": 1803160,
+   "prevalence": 0.2439912176368212,
+   "n_attempted": 105606,
+   "composition": [
+    {
+     "Label": "BENIGN",
+     "Attempted Category": -1,
+     "len": 5481500
+    },
+    {
+     "Label": "DoS Hulk",
+     "Attempted Category": -1,
+     "len": 1803160
+    },
+    {
+     "Label": "FTP-BruteForce - Attempted",
+     "Attempted Category": 1,
+     "len": 105520
+    },
+    {
+     "Label": "DoS Hulk - Attempted",
+     "Attempted Category": 0,
+     "len": 86
+    }
+   ],
+   "n_hours": 11,
+   "n_distinct_scores": 239217,
+   "ap": 0.2709041453554055,
+   "roc_auc": 0.6230267522377856,
+   "attack_episode": {
+    "labels": [
+     "DoS Hulk"
+    ],
+    "note": "one attack label (one documented episode) per day: episode recall = day recall"
+   },
+   "tb": {
+    "0.01": {
+     "tau": 0.033895809434983715,
+     "achieved_fpr": 0.1608832909202009,
+     "benign_alerts": 898872,
+     "n_benign": 5587106,
+     "recall": 0.015506111493156458,
+     "tp": 27960,
+     "n_attack": 1803160,
+     "precision": 0.030167279506965662,
+     "alerts_day": 926832,
+     "alerts_per_hour_max": 187833,
+     "alerts_per_hour_median": 87044.0,
+     "benign_alerts_per_hour_max": 187833,
+     "per_hour": [
+      {
+       "hour": 421884,
+       "N": 240925,
+       "alerts": 36290,
+       "benign_alerts": 36290,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421885,
+       "N": 662807,
+       "alerts": 95696,
+       "benign_alerts": 95696,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421886,
+       "N": 717736,
+       "alerts": 187833,
+       "benign_alerts": 187833,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421887,
+       "N": 702216,
+       "alerts": 102177,
+       "benign_alerts": 102177,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421888,
+       "N": 482436,
+       "alerts": 86572,
+       "benign_alerts": 86572,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421889,
+       "N": 2415298,
+       "alerts": 114658,
+       "benign_alerts": 86698,
+       "attacks": 1803160,
+       "tp": 27960
+      },
+      {
+       "hour": 421890,
+       "N": 619388,
+       "alerts": 88290,
+       "benign_alerts": 88290,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421891,
+       "N": 654376,
+       "alerts": 87044,
+       "benign_alerts": 87044,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421892,
+       "N": 646918,
+       "alerts": 84971,
+       "benign_alerts": 84971,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421893,
+       "N": 246489,
+       "alerts": 43238,
+       "benign_alerts": 43238,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421894,
+       "N": 1677,
+       "alerts": 63,
+       "benign_alerts": 63,
+       "attacks": 0,
+       "tp": 0
+      }
+     ],
+     "fpr_on_attempted_rows": 1.0,
+     "fpr_benign_label_only": 0.1447169570373073,
+     "sensitivity_target": {
+      "achieved_fpr": 0.1447169570373073,
+      "recall": 0.015506111493156458,
+      "ap": 0.2801659041764725
+     }
+    },
+    "0.05": {
+     "tau": 0.0033036312037174214,
+     "achieved_fpr": 0.3240930098695103,
+     "benign_alerts": 1810742,
+     "n_benign": 5587106,
+     "recall": 0.12435113911133787,
+     "tp": 224225,
+     "n_attack": 1803160,
+     "precision": 0.11018606198528035,
+     "alerts_day": 2034967,
+     "alerts_per_hour_max": 414730,
+     "alerts_per_hour_median": 192917.0,
+     "benign_alerts_per_hour_max": 291251,
+     "per_hour": [
+      {
+       "hour": 421884,
+       "N": 240925,
+       "alerts": 76684,
+       "benign_alerts": 76684,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421885,
+       "N": 662807,
+       "alerts": 207291,
+       "benign_alerts": 207291,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421886,
+       "N": 717736,
+       "alerts": 291251,
+       "benign_alerts": 291251,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421887,
+       "N": 702216,
+       "alerts": 214407,
+       "benign_alerts": 214407,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421888,
+       "N": 482436,
+       "alerts": 167170,
+       "benign_alerts": 167170,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421889,
+       "N": 2415298,
+       "alerts": 414730,
+       "benign_alerts": 190505,
+       "attacks": 1803160,
+       "tp": 224225
+      },
+      {
+       "hour": 421890,
+       "N": 619388,
+       "alerts": 193993,
+       "benign_alerts": 193993,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421891,
+       "N": 654376,
+       "alerts": 192917,
+       "benign_alerts": 192917,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421892,
+       "N": 646918,
+       "alerts": 191364,
+       "benign_alerts": 191364,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421893,
+       "N": 246489,
+       "alerts": 84850,
+       "benign_alerts": 84850,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421894,
+       "N": 1677,
+       "alerts": 310,
+       "benign_alerts": 310,
+       "attacks": 0,
+       "tp": 0
+      }
+     ],
+     "fpr_on_attempted_rows": 1.0,
+     "fpr_benign_label_only": 0.3110710571923743,
+     "sensitivity_target": {
+      "achieved_fpr": 0.3110710571923743,
+      "recall": 0.12435113911133787,
+      "ap": 0.2801659041764725
+     }
+    }
+   },
+   "score_scale": {
+    "ks_p1_vs_p2_benign": 0.5773619891690907,
+    "quantiles": {
+     "0.5": {
+      "p1_benign": 1.7590886860535243e-06,
+      "p2_benign": 0.00014480836413461952
+     },
+     "0.9": {
+      "p1_benign": 0.0003639633693954687,
+      "p2_benign": 0.06959573245601397
+     },
+     "0.99": {
+      "p1_benign": 0.033895514466057486,
+      "p2_benign": 0.963264486176656
+     },
+     "0.999": {
+      "p1_benign": 0.318350197048452,
+      "p2_benign": 0.9985002268634057
+     }
+    }
+   },
+   "ta_q": {
+    "alerts": 73897,
+    "recall_flow": 0.0006172497171632024,
+    "tp": 1113,
+    "n_attack": 1803160,
+    "max_recall_given_quota": 0.01339426340424588,
+    "precision": 0.015061504526570768,
+    "fpr": 0.013027137842024118,
+    "benign_alerts": 72784,
+    "recall_hour_block_mean": 0.0006172497171632024,
+    "n_hours": 11,
+    "n_attack_hours": 1,
+    "unused_capacity": 0,
+    "n_hours_with_omitted_group": 0,
+    "per_hour": [
+     {
+      "hour": 421884,
+      "N": 240925,
+      "quota": 2409,
+      "alerted": 2409,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421885,
+      "N": 662807,
+      "quota": 6628,
+      "alerted": 6628,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421886,
+      "N": 717736,
+      "quota": 7177,
+      "alerted": 7177,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421887,
+      "N": 702216,
+      "quota": 7022,
+      "alerted": 7022,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421888,
+      "N": 482436,
+      "quota": 4824,
+      "alerted": 4824,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421889,
+      "N": 2415298,
+      "quota": 24152,
+      "alerted": 24152,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 1803160,
+      "tp": 1113
+     },
+     {
+      "hour": 421890,
+      "N": 619388,
+      "quota": 6193,
+      "alerted": 6193,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421891,
+      "N": 654376,
+      "quota": 6543,
+      "alerted": 6543,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421892,
+      "N": 646918,
+      "quota": 6469,
+      "alerted": 6469,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421893,
+      "N": 246489,
+      "quota": 2464,
+      "alerted": 2464,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421894,
+      "N": 1677,
+      "quota": 16,
+      "alerted": 16,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     }
+    ]
+   },
+   "ta_K": {
+    "alerts": 5500,
+    "recall_flow": 0.0,
+    "tp": 0,
+    "n_attack": 1803160,
+    "max_recall_given_quota": 0.00027729097806073784,
+    "precision": 0.0,
+    "fpr": 0.0009844094599243329,
+    "benign_alerts": 5500,
+    "recall_hour_block_mean": 0.0,
+    "n_hours": 11,
+    "n_attack_hours": 1,
+    "unused_capacity": 0,
+    "n_hours_with_omitted_group": 0,
+    "per_hour": [
+     {
+      "hour": 421884,
+      "N": 240925,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421885,
+      "N": 662807,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421886,
+      "N": 717736,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421887,
+      "N": 702216,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421888,
+      "N": 482436,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421889,
+      "N": 2415298,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 1803160,
+      "tp": 0
+     },
+     {
+      "hour": 421890,
+      "N": 619388,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421891,
+      "N": 654376,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421892,
+      "N": 646918,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421893,
+      "N": 246489,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421894,
+      "N": 1677,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     }
+    ]
+   },
+   "estimation": {
+    "b=100": {
+     "tb_alpha_0_01": {
+      "recall": {
+       "census": 0.015506111493156458,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.015571743102909857,
+       "bias": 6.563160975339884e-05,
+       "rmse": 0.014239786998770782,
+       "coverage_95": 0.688,
+       "mean_ci_width": 0.04539025625651098
+      },
+      "fpr": {
+       "census": 0.1608832909202009,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.16078315261866272,
+       "bias": -0.00010013830153818293,
+       "rmse": 0.01405319364926724,
+       "coverage_95": 0.931,
+       "mean_ci_width": 0.05385604920497616
+      },
+      "labels_per_day": 1100,
+      "audited_attacks_mean": 74.535,
+      "p_zero_audited_attacks": 0.0,
+      "n_attack_hours": 1
+     },
+     "ta_q": {
+      "recall": {
+       "census": 0.0006172497171632024,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.0006841562661566267,
+       "bias": 6.690654899342433e-05,
+       "rmse": 0.0030695854389474917,
+       "coverage_95": 0.049,
+       "mean_ci_width": 0.0026170497292565226
+      },
+      "fpr": {
+       "census": 0.013027137842024118,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.01297669214746629,
+       "bias": -5.0445694557827575e-05,
+       "rmse": 0.0050758889679616915,
+       "coverage_95": 0.876,
+       "mean_ci_width": 0.019108273201339003
+      },
+      "labels_per_day": 1100,
+      "audited_attacks_mean": 74.589,
+      "p_zero_audited_attacks": 0.0,
+      "n_attack_hours": 1
+     }
+    },
+    "b=250": {
+     "tb_alpha_0_01": {
+      "recall": {
+       "census": 0.015506111493156458,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.015166261156133405,
+       "bias": -0.00033985033702305274,
+       "rmse": 0.008886727573366672,
+       "coverage_95": 0.896,
+       "mean_ci_width": 0.0328752880258214
+      },
+      "fpr": {
+       "census": 0.1608832909202009,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.16049992590365042,
+       "bias": -0.00038336501655047983,
+       "rmse": 0.008665291855248126,
+       "coverage_95": 0.944,
+       "mean_ci_width": 0.033943768082796553
+      },
+      "labels_per_day": 2750,
+      "audited_attacks_mean": 186.605,
+      "p_zero_audited_attacks": 0.0,
+      "n_attack_hours": 1
+     },
+     "ta_q": {
+      "recall": {
+       "census": 0.0006172497171632024,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.0006260670073417613,
+       "bias": 8.817290178558964e-06,
+       "rmse": 0.001894139816436442,
+       "coverage_95": 0.106,
+       "mean_ci_width": 0.002317071049448295
+      },
+      "fpr": {
+       "census": 0.013027137842024118,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.013095904630016895,
+       "bias": 6.876678799277655e-05,
+       "rmse": 0.0032767881908813096,
+       "coverage_95": 0.92,
+       "mean_ci_width": 0.012602197594441715
+      },
+      "labels_per_day": 2750,
+      "audited_attacks_mean": 187.262,
+      "p_zero_audited_attacks": 0.0,
+      "n_attack_hours": 1
+     }
+    },
+    "b=500": {
+     "tb_alpha_0_01": {
+      "recall": {
+       "census": 0.015506111493156458,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.015220794384313953,
+       "bias": -0.00028531710884250466,
+       "rmse": 0.00617778605014847,
+       "coverage_95": 0.933,
+       "mean_ci_width": 0.02430149175007651
+      },
+      "fpr": {
+       "census": 0.1608832909202009,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.16094587967245047,
+       "bias": 6.25887522495705e-05,
+       "rmse": 0.00620025115592851,
+       "coverage_95": 0.95,
+       "mean_ci_width": 0.024085786249975292
+      },
+      "labels_per_day": 5500,
+      "audited_attacks_mean": 372.913,
+      "p_zero_audited_attacks": 0.0,
+      "n_attack_hours": 1
+     },
+     "ta_q": {
+      "recall": {
+       "census": 0.0006172497171632024,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.000691818286459007,
+       "bias": 7.456856929580463e-05,
+       "rmse": 0.0013532879402522995,
+       "coverage_95": 0.23,
+       "mean_ci_width": 0.0025296047509467882
+      },
+      "fpr": {
+       "census": 0.013027137842024118,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.012992605967661873,
+       "bias": -3.4531874362244905e-05,
+       "rmse": 0.0022800891795868162,
+       "coverage_95": 0.944,
+       "mean_ci_width": 0.008975001599265965
+      },
+      "labels_per_day": 5500,
+      "audited_attacks_mean": 373.511,
+      "p_zero_audited_attacks": 0.0,
+      "n_attack_hours": 1
+     }
+    }
+   }
+  },
+  "P2_pooled": {
+   "n_rows": 13288616,
+   "n_attack": 1897357,
+   "prevalence": 0.14278063268590196,
+   "n_attempted": 298960,
+   "composition": [
+    {
+     "Label": "BENIGN",
+     "Attempted Category": -1,
+     "len": 11092299
+    },
+    {
+     "Label": "DoS Hulk",
+     "Attempted Category": -1,
+     "len": 1803160
+    },
+    {
+     "Label": "FTP-BruteForce - Attempted",
+     "Attempted Category": 1,
+     "len": 298844
+    },
+    {
+     "Label": "SSH-BruteForce",
+     "Attempted Category": -1,
+     "len": 94197
+    },
+    {
+     "Label": "DoS Hulk - Attempted",
+     "Attempted Category": 0,
+     "len": 86
+    },
+    {
+     "Label": "FTP-BruteForce - Attempted",
+     "Attempted Category": 4,
+     "len": 30
+    }
+   ],
+   "n_hours": 24,
+   "n_distinct_scores": 368389,
+   "ap": 0.1700543671528939,
+   "roc_auc": 0.630813418566928,
+   "attack_episode": {
+    "labels": [
+     "DoS Hulk",
+     "SSH-BruteForce"
+    ],
+    "note": "one attack label (one documented episode) per day: episode recall = day recall"
+   },
+   "tb": {
+    "0.01": {
+     "tau": 0.033895809434983715,
+     "achieved_fpr": 0.16754346468638803,
+     "benign_alerts": 1908531,
+     "n_benign": 11391259,
+     "recall": 0.0643827176435431,
+     "tp": 122157,
+     "n_attack": 1897357,
+     "precision": 0.06015547440079421,
+     "alerts_day": 2030688,
+     "alerts_per_hour_max": 211326,
+     "alerts_per_hour_median": 87667.0,
+     "benign_alerts_per_hour_max": 211326,
+     "per_hour": [
+      {
+       "hour": 421836,
+       "N": 372528,
+       "alerts": 49948,
+       "benign_alerts": 49948,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421837,
+       "N": 659461,
+       "alerts": 97028,
+       "benign_alerts": 97028,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421838,
+       "N": 705319,
+       "alerts": 144943,
+       "benign_alerts": 144943,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421839,
+       "N": 819974,
+       "alerts": 211326,
+       "benign_alerts": 211326,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421840,
+       "N": 508381,
+       "alerts": 111392,
+       "benign_alerts": 111392,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421841,
+       "N": 631233,
+       "alerts": 90070,
+       "benign_alerts": 90070,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421842,
+       "N": 679099,
+       "alerts": 148409,
+       "benign_alerts": 87996,
+       "attacks": 60413,
+       "tp": 60413
+      },
+      {
+       "hour": 421843,
+       "N": 656657,
+       "alerts": 121203,
+       "benign_alerts": 87419,
+       "attacks": 33784,
+       "tp": 33784
+      },
+      {
+       "hour": 421844,
+       "N": 628342,
+       "alerts": 84834,
+       "benign_alerts": 84834,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421845,
+       "N": 225909,
+       "alerts": 42560,
+       "benign_alerts": 42560,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421846,
+       "N": 7599,
+       "alerts": 1187,
+       "benign_alerts": 1187,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421847,
+       "N": 2655,
+       "alerts": 678,
+       "benign_alerts": 678,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421848,
+       "N": 1193,
+       "alerts": 278,
+       "benign_alerts": 278,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421884,
+       "N": 240925,
+       "alerts": 36290,
+       "benign_alerts": 36290,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421885,
+       "N": 662807,
+       "alerts": 95696,
+       "benign_alerts": 95696,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421886,
+       "N": 717736,
+       "alerts": 187833,
+       "benign_alerts": 187833,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421887,
+       "N": 702216,
+       "alerts": 102177,
+       "benign_alerts": 102177,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421888,
+       "N": 482436,
+       "alerts": 86572,
+       "benign_alerts": 86572,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421889,
+       "N": 2415298,
+       "alerts": 114658,
+       "benign_alerts": 86698,
+       "attacks": 1803160,
+       "tp": 27960
+      },
+      {
+       "hour": 421890,
+       "N": 619388,
+       "alerts": 88290,
+       "benign_alerts": 88290,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421891,
+       "N": 654376,
+       "alerts": 87044,
+       "benign_alerts": 87044,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421892,
+       "N": 646918,
+       "alerts": 84971,
+       "benign_alerts": 84971,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421893,
+       "N": 246489,
+       "alerts": 43238,
+       "benign_alerts": 43238,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421894,
+       "N": 1677,
+       "alerts": 63,
+       "benign_alerts": 63,
+       "attacks": 0,
+       "tp": 0
+      }
+     ],
+     "fpr_on_attempted_rows": 1.0,
+     "fpr_benign_label_only": 0.14510706932800857,
+     "sensitivity_target": {
+      "achieved_fpr": 0.14510706932800857,
+      "recall": 0.0643827176435431,
+      "ap": 0.2014918847488788
+     }
+    },
+    "0.05": {
+     "tau": 0.0033036312037174214,
+     "achieved_fpr": 0.33516277700296343,
+     "benign_alerts": 3817926,
+     "n_benign": 11391259,
+     "recall": 0.16782397830244913,
+     "tp": 318422,
+     "n_attack": 1897357,
+     "precision": 0.07698143386388186,
+     "alerts_day": 4136348,
+     "alerts_per_hour_max": 414730,
+     "alerts_per_hour_median": 193455.0,
+     "benign_alerts_per_hour_max": 333718,
+     "per_hour": [
+      {
+       "hour": 421836,
+       "N": 372528,
+       "alerts": 108409,
+       "benign_alerts": 108409,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421837,
+       "N": 659461,
+       "alerts": 220170,
+       "benign_alerts": 220170,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421838,
+       "N": 705319,
+       "alerts": 270685,
+       "benign_alerts": 270685,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421839,
+       "N": 819974,
+       "alerts": 333718,
+       "benign_alerts": 333718,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421840,
+       "N": 508381,
+       "alerts": 197503,
+       "benign_alerts": 197503,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421841,
+       "N": 631233,
+       "alerts": 202741,
+       "benign_alerts": 202741,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421842,
+       "N": 679099,
+       "alerts": 258921,
+       "benign_alerts": 198508,
+       "attacks": 60413,
+       "tp": 60413
+      },
+      {
+       "hour": 421843,
+       "N": 656657,
+       "alerts": 236786,
+       "benign_alerts": 203002,
+       "attacks": 33784,
+       "tp": 33784
+      },
+      {
+       "hour": 421844,
+       "N": 628342,
+       "alerts": 188795,
+       "benign_alerts": 188795,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421845,
+       "N": 225909,
+       "alerts": 79483,
+       "benign_alerts": 79483,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421846,
+       "N": 7599,
+       "alerts": 2526,
+       "benign_alerts": 2526,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421847,
+       "N": 2655,
+       "alerts": 1172,
+       "benign_alerts": 1172,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421848,
+       "N": 1193,
+       "alerts": 472,
+       "benign_alerts": 472,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421884,
+       "N": 240925,
+       "alerts": 76684,
+       "benign_alerts": 76684,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421885,
+       "N": 662807,
+       "alerts": 207291,
+       "benign_alerts": 207291,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421886,
+       "N": 717736,
+       "alerts": 291251,
+       "benign_alerts": 291251,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421887,
+       "N": 702216,
+       "alerts": 214407,
+       "benign_alerts": 214407,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421888,
+       "N": 482436,
+       "alerts": 167170,
+       "benign_alerts": 167170,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421889,
+       "N": 2415298,
+       "alerts": 414730,
+       "benign_alerts": 190505,
+       "attacks": 1803160,
+       "tp": 224225
+      },
+      {
+       "hour": 421890,
+       "N": 619388,
+       "alerts": 193993,
+       "benign_alerts": 193993,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421891,
+       "N": 654376,
+       "alerts": 192917,
+       "benign_alerts": 192917,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421892,
+       "N": 646918,
+       "alerts": 191364,
+       "benign_alerts": 191364,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421893,
+       "N": 246489,
+       "alerts": 84850,
+       "benign_alerts": 84850,
+       "attacks": 0,
+       "tp": 0
+      },
+      {
+       "hour": 421894,
+       "N": 1677,
+       "alerts": 310,
+       "benign_alerts": 310,
+       "attacks": 0,
+       "tp": 0
+      }
+     ],
+     "fpr_on_attempted_rows": 1.0,
+     "fpr_benign_label_only": 0.3172440627502017,
+     "sensitivity_target": {
+      "achieved_fpr": 0.3172440627502017,
+      "recall": 0.16782397830244913,
+      "ap": 0.2014918847488788
+     }
+    }
+   },
+   "score_scale": {
+    "ks_p1_vs_p2_benign": 0.5772778052259081,
+    "quantiles": {
+     "0.5": {
+      "p1_benign": 1.7590886860535243e-06,
+      "p2_benign": 0.00014480836413461952
+     },
+     "0.9": {
+      "p1_benign": 0.0003639633693954687,
+      "p2_benign": 0.07626021241977049
+     },
+     "0.99": {
+      "p1_benign": 0.033895514466057486,
+      "p2_benign": 0.9272209339777787
+     },
+     "0.999": {
+      "p1_benign": 0.318350197048452,
+      "p2_benign": 0.9985002268634056
+     }
+    }
+   },
+   "ta_q": {
+    "alerts": 132873,
+    "recall_flow": 0.0063093028881754986,
+    "tp": 11971,
+    "n_attack": 1897357,
+    "max_recall_given_quota": 0.019768551727481966,
+    "precision": 0.09009354797438156,
+    "fpr": 0.010613576602902278,
+    "benign_alerts": 120902,
+    "recall_hour_block_mean": 0.0834785672650878,
+    "n_hours": 24,
+    "n_attack_hours": 3,
+    "unused_capacity": 0,
+    "n_hours_with_omitted_group": 0,
+    "per_hour": [
+     {
+      "hour": 421836,
+      "N": 372528,
+      "quota": 3725,
+      "alerted": 3725,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421837,
+      "N": 659461,
+      "quota": 6594,
+      "alerted": 6594,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421838,
+      "N": 705319,
+      "quota": 7053,
+      "alerted": 7053,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421839,
+      "N": 819974,
+      "quota": 8199,
+      "alerted": 8199,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421840,
+      "N": 508381,
+      "quota": 5083,
+      "alerted": 5083,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421841,
+      "N": 631233,
+      "quota": 6312,
+      "alerted": 6312,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421842,
+      "N": 679099,
+      "quota": 6790,
+      "alerted": 6790,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 60413,
+      "tp": 5486
+     },
+     {
+      "hour": 421843,
+      "N": 656657,
+      "quota": 6566,
+      "alerted": 6566,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 33784,
+      "tp": 5372
+     },
+     {
+      "hour": 421844,
+      "N": 628342,
+      "quota": 6283,
+      "alerted": 6283,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421845,
+      "N": 225909,
+      "quota": 2259,
+      "alerted": 2259,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421846,
+      "N": 7599,
+      "quota": 75,
+      "alerted": 75,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421847,
+      "N": 2655,
+      "quota": 26,
+      "alerted": 26,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421848,
+      "N": 1193,
+      "quota": 11,
+      "alerted": 11,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421884,
+      "N": 240925,
+      "quota": 2409,
+      "alerted": 2409,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421885,
+      "N": 662807,
+      "quota": 6628,
+      "alerted": 6628,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421886,
+      "N": 717736,
+      "quota": 7177,
+      "alerted": 7177,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421887,
+      "N": 702216,
+      "quota": 7022,
+      "alerted": 7022,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421888,
+      "N": 482436,
+      "quota": 4824,
+      "alerted": 4824,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421889,
+      "N": 2415298,
+      "quota": 24152,
+      "alerted": 24152,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 1803160,
+      "tp": 1113
+     },
+     {
+      "hour": 421890,
+      "N": 619388,
+      "quota": 6193,
+      "alerted": 6193,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421891,
+      "N": 654376,
+      "quota": 6543,
+      "alerted": 6543,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421892,
+      "N": 646918,
+      "quota": 6469,
+      "alerted": 6469,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421893,
+      "N": 246489,
+      "quota": 2464,
+      "alerted": 2464,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421894,
+      "N": 1677,
+      "quota": 16,
+      "alerted": 16,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     }
+    ]
+   },
+   "ta_K": {
+    "alerts": 12000,
+    "recall_flow": 0.0,
+    "tp": 0,
+    "n_attack": 1897357,
+    "max_recall_given_quota": 0.0007905734134377452,
+    "precision": 0.0,
+    "fpr": 0.0010534393081572458,
+    "benign_alerts": 12000,
+    "recall_hour_block_mean": 0.0,
+    "n_hours": 24,
+    "n_attack_hours": 3,
+    "unused_capacity": 0,
+    "n_hours_with_omitted_group": 0,
+    "per_hour": [
+     {
+      "hour": 421836,
+      "N": 372528,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421837,
+      "N": 659461,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421838,
+      "N": 705319,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421839,
+      "N": 819974,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421840,
+      "N": 508381,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421841,
+      "N": 631233,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421842,
+      "N": 679099,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 60413,
+      "tp": 0
+     },
+     {
+      "hour": 421843,
+      "N": 656657,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 33784,
+      "tp": 0
+     },
+     {
+      "hour": 421844,
+      "N": 628342,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421845,
+      "N": 225909,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421846,
+      "N": 7599,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421847,
+      "N": 2655,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421848,
+      "N": 1193,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421884,
+      "N": 240925,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421885,
+      "N": 662807,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421886,
+      "N": 717736,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421887,
+      "N": 702216,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421888,
+      "N": 482436,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421889,
+      "N": 2415298,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 1803160,
+      "tp": 0
+     },
+     {
+      "hour": 421890,
+      "N": 619388,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421891,
+      "N": 654376,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421892,
+      "N": 646918,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421893,
+      "N": 246489,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     },
+     {
+      "hour": 421894,
+      "N": 1677,
+      "quota": 500,
+      "alerted": 500,
+      "unused": 0,
+      "omitted_group": 0,
+      "attacks": 0,
+      "tp": 0
+     }
+    ]
+   },
+   "estimation": {
+    "b=100": {
+     "tb_alpha_0_01": {
+      "recall": {
+       "census": 0.0643827176435431,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.06363995441771626,
+       "bias": -0.0007427632258268368,
+       "rmse": 0.01841879990085891,
+       "coverage_95": 0.897,
+       "mean_ci_width": 0.06865743801663395
+      },
+      "fpr": {
+       "census": 0.16754346468638803,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.1676461367488617,
+       "bias": 0.00010267206247366323,
+       "rmse": 0.009297204620775056,
+       "coverage_95": 0.948,
+       "mean_ci_width": 0.036389406422070586
+      },
+      "labels_per_day": 2400,
+      "audited_attacks_mean": 88.553,
+      "p_zero_audited_attacks": 0.0,
+      "n_attack_hours": 3
+     },
+     "ta_q": {
+      "recall": {
+       "census": 0.0063093028881754986,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.0064523233340677616,
+       "bias": 0.000143020445892263,
+       "rmse": 0.005221400084793482,
+       "coverage_95": 0.82,
+       "mean_ci_width": 0.017207842878163012
+      },
+      "fpr": {
+       "census": 0.010613576602902278,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.010662601395062763,
+       "bias": 4.902479216048472e-05,
+       "rmse": 0.0030143993397250147,
+       "coverage_95": 0.907,
+       "mean_ci_width": 0.011238903713200283
+      },
+      "labels_per_day": 2400,
+      "audited_attacks_mean": 88.898,
+      "p_zero_audited_attacks": 0.0,
+      "n_attack_hours": 3
+     }
+    },
+    "b=250": {
+     "tb_alpha_0_01": {
+      "recall": {
+       "census": 0.0643827176435431,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.06509615149648637,
+       "bias": 0.000713433852943271,
+       "rmse": 0.011981233736599161,
+       "coverage_95": 0.932,
+       "mean_ci_width": 0.04499642195756698
+      },
+      "fpr": {
+       "census": 0.16754346468638803,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.16775034157949584,
+       "bias": 0.00020687689310780466,
+       "rmse": 0.005719644068957867,
+       "coverage_95": 0.965,
+       "mean_ci_width": 0.0230175767351252
+      },
+      "labels_per_day": 6000,
+      "audited_attacks_mean": 221.644,
+      "p_zero_audited_attacks": 0.0,
+      "n_attack_hours": 3
+     },
+     "ta_q": {
+      "recall": {
+       "census": 0.0063093028881754986,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.006281150991833986,
+       "bias": -2.8151896341512862e-05,
+       "rmse": 0.0034305439943902592,
+       "coverage_95": 0.918,
+       "mean_ci_width": 0.011997409398821494
+      },
+      "fpr": {
+       "census": 0.010613576602902278,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.010612126815178943,
+       "bias": -1.4497877233350664e-06,
+       "rmse": 0.0019145455483637992,
+       "coverage_95": 0.919,
+       "mean_ci_width": 0.007234173948337442
+      },
+      "labels_per_day": 6000,
+      "audited_attacks_mean": 221.896,
+      "p_zero_audited_attacks": 0.0,
+      "n_attack_hours": 3
+     }
+    },
+    "b=500": {
+     "tb_alpha_0_01": {
+      "recall": {
+       "census": 0.0643827176435431,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.06483883177165965,
+       "bias": 0.0004561141281165526,
+       "rmse": 0.008292359871942535,
+       "coverage_95": 0.946,
+       "mean_ci_width": 0.03199756061283567
+      },
+      "fpr": {
+       "census": 0.16754346468638803,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.16746779385435623,
+       "bias": -7.567083203180447e-05,
+       "rmse": 0.004111215286354658,
+       "coverage_95": 0.95,
+       "mean_ci_width": 0.016256743449046474
+      },
+      "labels_per_day": 12000,
+      "audited_attacks_mean": 443.573,
+      "p_zero_audited_attacks": 0.0,
+      "n_attack_hours": 3
+     },
+     "ta_q": {
+      "recall": {
+       "census": 0.0063093028881754986,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.006233631095433706,
+       "bias": -7.56717927417926e-05,
+       "rmse": 0.0024552919801564274,
+       "coverage_95": 0.895,
+       "mean_ci_width": 0.008788092505636098
+      },
+      "fpr": {
+       "census": 0.010613576602902278,
+       "n_replicates": 1000,
+       "n_defined": 1000,
+       "p_undefined": 0.0,
+       "mean_estimate": 0.010486791859644583,
+       "bias": -0.00012678474325769455,
+       "rmse": 0.0013168598995904445,
+       "coverage_95": 0.93,
+       "mean_ci_width": 0.005100520728174889
+      },
+      "labels_per_day": 12000,
+      "audited_attacks_mean": 442.662,
+      "p_zero_audited_attacks": 0.0,
+      "n_attack_hours": 3
+     }
+    }
+   }
+  }
+ }
+}

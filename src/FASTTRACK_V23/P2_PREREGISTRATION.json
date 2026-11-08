@@ -1,0 +1,64 @@
+{
+ "record": "P2 pre-registration (written after the P1 freeze check, before any P2 row is scored)",
+ "authorised_by": "owner: FINAL P1 CLOSEOUT AND P2 EXECUTION AUTHORIZATION (2026-11-07)",
+ "detector": "RF-03 (F3 8a93f95e96226ac2179c6ac658328d26d8caaca14807bdce6630e8fb89be2c2f), one fit on all five P1 days",
+ "settings_sha256": "d1a6585ac71b8cf9c41d0901bc878aaf60677f4d94f0ae8a23f14c52f5f2a683",
+ "final_thresholds_sha256": "e774c627f97c16bc3b4747ca152ab2c7409e8808b9c73fd27a87c347e47e1fb5",
+ "tau_final": {
+  "0.01": {
+   "tau": 0.033895809434983715,
+   "tau_hex": "0x1.15acaa1fd49c0p-5"
+  },
+  "0.05": {
+   "tau": 0.0033036312037174214,
+   "tau_hex": "0x1.b10377f4bdea5p-9"
+  }
+ },
+ "q": 0.01,
+ "K": 500,
+ "b": [
+  100,
+  250,
+  500
+ ],
+ "estimation_seed": 20261107,
+ "replicates": 1000,
+ "tie_seed": 20261104,
+ "p2_files": {
+  "Wed14": "4ceed4ba26973004e3a86ae0c57d6a4ddd9742f1b222f44209cd7c1c48618fdb",
+  "Fri16": "a16b76a454a25fa4fd84c320f32e3164b22c09f537be3e77450ddeb2168a7622"
+ },
+ "plan_sha256": "237b179a6852fcf91e00edc8295372ed5ec9e2f80ca8169824fc063f48b69010",
+ "p1_freeze_check": {
+  "status": "PASS",
+  "problems": [],
+  "n_ok_keys": 20,
+  "n_vectors_verified": 60,
+  "recovery_chain": {
+   "ledger_line_hash": true,
+   "stopped_hash": true,
+   "token": true,
+   "orphans_archived": true,
+   "orphans_not_referenced": true,
+   "attempt2": true,
+   "attempt1_evidence_kept": true,
+   "no_STOPPED_now": true,
+   "launcher_rc0": true
+  },
+  "settings_sha256": "d1a6585ac71b8cf9c41d0901bc878aaf60677f4d94f0ae8a23f14c52f5f2a683",
+  "final_thresholds_sha256": "e774c627f97c16bc3b4747ca152ab2c7409e8808b9c73fd27a87c347e47e1fb5",
+  "tau_final": {
+   "0.01": {
+    "tau": 0.033895809434983715,
+    "tau_hex": "0x1.15acaa1fd49c0p-5"
+   },
+   "0.05": {
+    "tau": 0.0033036312037174214,
+    "tau_hex": "0x1.b10377f4bdea5p-9"
+   }
+  },
+  "tb_results_sha256": "307b99ca59ba335bb48bf436f6252c419d9c4160e592ac6a2cea7c328ee9cc60",
+  "tb_ledger_sha256": "58c5e778ed26974d48997e00c74a5d7a2d7f703092f252687aec9153bb0d0145",
+  "p1_ta_results_sha256": "327da5c729c9235fe037b9bd7c311f57cb66bea52a0625a9e937df919d7fab93"
+ }
+}

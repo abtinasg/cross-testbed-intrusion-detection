@@ -1,0 +1,48 @@
+{
+ "policy_id": "RG8-A1-SMOKE-8GB-v1",
+ "status": "AMENDMENT A1 - PROPOSED FOR EXACTLY ONE GUARDED SMOKE FIT (scope and authorization in A1_AMENDMENT.md). Not valid for the cross-validation.",
+ "applies_to": "ALL_12_F3_CONFIGURATIONS_UNIFORMLY",
+ "environment": {
+  "executable": "<PINNED_INTERPRETER:anaconda3/bin/python3>",
+  "python": "3.13.5",
+  "numpy": "2.4.6",
+  "sklearn": "1.9.0",
+  "psutil": "5.9.0",
+  "isolated": true
+ },
+ "host": {
+  "min_installed_ram_bytes": 8589934592
+ },
+ "preflight": {
+  "min_available_bytes": 2684354560,
+  "max_pressure_level": 1,
+  "temp_reserve_bytes": 1342177280,
+  "min_free_disk_bytes": 15032385536,
+  "wait_s": 300,
+  "recheck_s": 15
+ },
+ "monitor": {
+  "tree_mem_limit_bytes": 3221225472,
+  "swap_growth_limit_bytes": 1610612736,
+  "critical_pressure_stop_s": 2,
+  "min_free_disk_bytes": 10737418240,
+  "time_limit_s": 3600,
+  "poll_s": 0.5,
+  "max_sample_gap_s": 5.0,
+  "fsync_s": 10
+ },
+ "worker": {
+  "daemon": false,
+  "own_process_group": true,
+  "exclusive_lock": true,
+  "start_method": "spawn"
+ },
+ "on_breach": {
+  "retry": false,
+  "reduce_rows": false,
+  "change_parameters": false,
+  "score": null,
+  "stop_pilot": true
+ },
+ "derivation": "Amendment A1 to RG8-UNIFORM-8GB-v1 for one fit (LR-01, P1, outer Tue held out, V1 route). Evidence: RG8_POLICY_EVIDENCE.json (20 full-scale synthetic fits). D = 2.39 GiB = largest V1 max(RSS, footprint) of any configuration (LR-01, campaign 1). preflight available = ceil_0.25GiB(D) = 2.5 GiB: the 0.5 GiB drift reserve R is replaced by continuous in-fit stops; start pressure must be NORMAL. tree_mem = ceil_0.25GiB(1.25 x D) = 3.0 GiB (v20 option (a); LR model state is negligible). swap_growth = ceil_0.25GiB(1.32 GiB, largest growth of any measured fit, started at 1.27 GiB available) = 1.5 GiB. critical pressure stop after 2 s (0 critical samples in 20 fits). Unchanged: disk 14 GiB preflight >= 10 + 1.25 + 1.5, 10 GiB in-fit floor, 3600 s, 0.5 s polling, 5 s watchdog, no retry."
+}

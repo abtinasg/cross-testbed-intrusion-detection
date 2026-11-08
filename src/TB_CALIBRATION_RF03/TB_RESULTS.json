@@ -1,0 +1,258 @@
+{
+ "status": "PASS",
+ "problems": [],
+ "config": "RF-03",
+ "complete_outers": [
+  "Mon",
+  "Tue",
+  "Wed",
+  "Thu",
+  "Fri"
+ ],
+ "alphas": {
+  "primary": 0.01,
+  "sensitivity": 0.05
+ },
+ "inner_ap": {
+  "Mon/Tue": 0.4914750988744988,
+  "Mon/Wed": 0.9910135376620968,
+  "Mon/Thu": 0.9852394776508177,
+  "Mon/Fri": 0.9992558251692182,
+  "Tue/Mon": null,
+  "Tue/Wed": 0.9968280404157634,
+  "Tue/Thu": 0.9826473149596759,
+  "Tue/Fri": 0.9995872774939543,
+  "Wed/Mon": null,
+  "Wed/Tue": 0.5591401119488483,
+  "Wed/Thu": 0.9829844794691907,
+  "Wed/Fri": 0.9969769485665922,
+  "Thu/Mon": null,
+  "Thu/Tue": 0.09604040962049229,
+  "Thu/Wed": 0.9904778882949246,
+  "Thu/Fri": 0.992892600544638,
+  "Fri/Mon": null,
+  "Fri/Tue": 0.38186051079799654,
+  "Fri/Wed": 0.9216949489101991,
+  "Fri/Thu": 0.891834943279052
+ },
+ "tb_ledger_sha256": "58c5e778ed26974d48997e00c74a5d7a2d7f703092f252687aec9153bb0d0145",
+ "calibration_files": {
+  "Mon": "7e0808861f03c3909315ffaced61f5acc6231dbc99921b99fc7fad86a87233cd",
+  "Tue": "f5e5bf4c0a5cd2c17fb77286ec07959e588eacd512c25fb63b76e84b2dd49ebd",
+  "Wed": "fcd1287e940b43235181cb7718796e9263a0c2340ba9c1b1f5ffd9a3b5919235",
+  "Thu": "cec6256eeebb0c02afb940e8eccdf59c893ce5beae3b8f93dbe231603b1f3826",
+  "Fri": "d7e6a4b8650b4be92d123cede9f8a6ba45aaef4f58093fa348834d5e023246f5"
+ },
+ "per_outer": {
+  "Mon": {
+   "n_benign_pooled": 1222921,
+   "ks": 0.28668100535604274,
+   "primary": {
+    "tau": 0.04581947835964946,
+    "tau_hex": "0x1.775a69226217ap-5",
+    "calibration_fpr": 0.009999828279995192,
+    "achieved_fpr": 0.009894409403052548,
+    "benign_alerts": 3677,
+    "n_benign": 371624,
+    "alerts_day": 3677,
+    "recall": null,
+    "tp": 0,
+    "n_attack": 0,
+    "precision": 0.0,
+    "alerts_per_hour": {
+     "max": 878,
+     "median": 156.0,
+     "n_hours": 10
+    },
+    "benign_alerts_per_hour_max": 878
+   },
+   "sensitivity": {
+    "tau": 0.003658112977359172,
+    "tau_hex": "0x1.df79e734a63e3p-9",
+    "calibration_fpr": 0.04999505282843291,
+    "achieved_fpr": 0.07286397003422815,
+    "benign_alerts": 27078,
+    "n_benign": 371624,
+    "alerts_day": 27078,
+    "recall": null,
+    "tp": 0,
+    "n_attack": 0,
+    "precision": 0.0,
+    "alerts_per_hour": {
+     "max": 6568,
+     "median": 1968.0,
+     "n_hours": 10
+    },
+    "benign_alerts_per_hour_max": 6568
+   }
+  },
+  "Tue": {
+   "n_benign_pooled": 1279400,
+   "ks": 0.3709878067199455,
+   "primary": {
+    "tau": 0.05202172210393956,
+    "tau_hex": "0x1.aa297563c6d36p-5",
+    "calibration_fpr": 0.009538064717836485,
+    "achieved_fpr": 0.006406574751304955,
+    "benign_alerts": 2019,
+    "n_benign": 315145,
+    "alerts_day": 5954,
+    "recall": 0.5675753642002019,
+    "tp": 3935,
+    "n_attack": 6933,
+    "precision": 0.660900235136043,
+    "alerts_per_hour": {
+     "max": 2888,
+     "median": 170.0,
+     "n_hours": 10
+    },
+    "benign_alerts_per_hour_max": 587
+   },
+   "sensitivity": {
+    "tau": 0.004651673183849772,
+    "tau_hex": "0x1.30da203241b29p-8",
+    "calibration_fpr": 0.049998436767234644,
+    "achieved_fpr": 0.04168240016500341,
+    "benign_alerts": 13136,
+    "n_benign": 315145,
+    "alerts_day": 19538,
+    "recall": 0.9234097793163133,
+    "tp": 6402,
+    "n_attack": 6933,
+    "precision": 0.3276691575391545,
+    "alerts_per_hour": {
+     "max": 5082,
+     "median": 1702.0,
+     "n_hours": 10
+    },
+    "benign_alerts_per_hour_max": 2479
+   }
+  },
+  "Wed": {
+   "n_benign_pooled": 1269549,
+   "ks": 0.12894039147295056,
+   "primary": {
+    "tau": 0.027545537193938267,
+    "tau_hex": "0x1.c34e5b5984921p-6",
+    "calibration_fpr": 0.009757008197399233,
+    "achieved_fpr": 0.011400140309419193,
+    "benign_alerts": 3705,
+    "n_benign": 324996,
+    "alerts_day": 172203,
+    "recall": 0.9816656471205104,
+    "tp": 168498,
+    "n_attack": 171645,
+    "precision": 0.9784846953885821,
+    "alerts_per_hour": {
+     "max": 155430,
+     "median": 137.5,
+     "n_hours": 10
+    },
+    "benign_alerts_per_hour_max": 1565
+   },
+   "sensitivity": {
+    "tau": 0.002,
+    "tau_hex": "0x1.0624dd2f1a9fcp-9",
+    "calibration_fpr": 0.049924028139126574,
+    "achieved_fpr": 0.04337899543378995,
+    "benign_alerts": 14098,
+    "n_benign": 324996,
+    "alerts_day": 185612,
+    "recall": 0.9992367968772757,
+    "tp": 171514,
+    "n_attack": 171645,
+    "precision": 0.9240458591039372,
+    "alerts_per_hour": {
+     "max": 158123,
+     "median": 1248.5,
+     "n_hours": 10
+    },
+    "benign_alerts_per_hour_max": 3346
+   }
+  },
+  "Thu": {
+   "n_benign_pooled": 1304376,
+   "ks": 0.1327214229746121,
+   "primary": {
+    "tau": 0.02437430946996546,
+    "tau_hex": "0x1.8f5943824f366p-6",
+    "calibration_fpr": 0.0099534183394972,
+    "achieved_fpr": 0.011758664778112066,
+    "benign_alerts": 3412,
+    "n_benign": 290169,
+    "alerts_day": 74868,
+    "recall": 0.9937280097904237,
+    "tp": 71456,
+    "n_attack": 71907,
+    "precision": 0.954426457231394,
+    "alerts_per_hour": {
+     "max": 70331,
+     "median": 134.5,
+     "n_hours": 10
+    },
+    "benign_alerts_per_hour_max": 1937
+   },
+   "sensitivity": {
+    "tau": 0.0017391304347826085,
+    "tau_hex": "0x1.c7e7115d0ce94p-10",
+    "calibration_fpr": 0.049915821818248725,
+    "achieved_fpr": 0.046472917506694376,
+    "benign_alerts": 13485,
+    "n_benign": 290169,
+    "alerts_day": 85224,
+    "recall": 0.9976636488798031,
+    "tp": 71739,
+    "n_attack": 71907,
+    "precision": 0.8417699239650802,
+    "alerts_per_hour": {
+     "max": 72025,
+     "median": 1209.0,
+     "n_hours": 10
+    },
+    "benign_alerts_per_hour_max": 3379
+   }
+  },
+  "Fri": {
+   "n_benign_pooled": 1301934,
+   "ks": 0.35092363236412827,
+   "primary": {
+    "tau": 0.027878419907536926,
+    "tau_hex": "0x1.c8c2917116f61p-6",
+    "calibration_fpr": 0.008839925833413982,
+    "achieved_fpr": 0.00992443893086726,
+    "benign_alerts": 2904,
+    "n_benign": 292611,
+    "alerts_day": 257203,
+    "recall": 0.9974622076831957,
+    "tp": 254299,
+    "n_attack": 254946,
+    "precision": 0.9887093074342057,
+    "alerts_per_hour": {
+     "max": 139543,
+     "median": 386.0,
+     "n_hours": 9
+    },
+    "benign_alerts_per_hour_max": 754
+   },
+   "sensitivity": {
+    "tau": 0.0027731140704554983,
+    "tau_hex": "0x1.6b7a447b3ae86p-9",
+    "calibration_fpr": 0.04999946233833666,
+    "achieved_fpr": 0.04822785199462768,
+    "benign_alerts": 14112,
+    "n_benign": 292611,
+    "alerts_day": 268993,
+    "recall": 0.9997450440485436,
+    "tp": 254881,
+    "n_attack": 254946,
+    "precision": 0.9475376682664605,
+    "alerts_per_hour": {
+     "max": 140966,
+     "median": 1971.0,
+     "n_hours": 9
+    },
+    "benign_alerts_per_hour_max": 2154
+   }
+  }
+ }
+}

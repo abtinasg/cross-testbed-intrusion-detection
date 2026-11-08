@@ -1,0 +1,48 @@
+{
+ "policy_id": "RG8-UNIFORM-8GB-v1",
+ "status": "PROPOSED - NOT FROZEN. Requires independent review. Synthetic use only.",
+ "applies_to": "ALL_12_F3_CONFIGURATIONS_UNIFORMLY",
+ "environment": {
+  "executable": "<PINNED_INTERPRETER:anaconda3/bin/python3>",
+  "python": "3.13.5",
+  "numpy": "2.4.6",
+  "sklearn": "1.9.0",
+  "psutil": "5.9.0",
+  "isolated": true
+ },
+ "host": {
+  "min_installed_ram_bytes": 8589934592
+ },
+ "preflight": {
+  "min_available_bytes": 3221225472,
+  "max_pressure_level": 2,
+  "temp_reserve_bytes": 1342177280,
+  "min_free_disk_bytes": 15032385536,
+  "wait_s": 300,
+  "recheck_s": 15
+ },
+ "monitor": {
+  "tree_mem_limit_bytes": 5100273664,
+  "swap_growth_limit_bytes": 2952790016,
+  "critical_pressure_stop_s": 10,
+  "min_free_disk_bytes": 10737418240,
+  "time_limit_s": 3600,
+  "poll_s": 0.5,
+  "max_sample_gap_s": 5.0,
+  "fsync_s": 10
+ },
+ "worker": {
+  "daemon": false,
+  "own_process_group": true,
+  "exclusive_lock": true,
+  "start_method": "spawn"
+ },
+ "on_breach": {
+  "retry": false,
+  "reduce_rows": false,
+  "change_parameters": false,
+  "score": null,
+  "stop_pilot": true
+ },
+ "derivation": "See 02_RG8_RESOURCE_POLICY_JUSTIFICATION.md and RG8_POLICY_EVIDENCE.json. tree_mem = ceil_0.25GiB(1.25 x 3.70 GiB largest footprint of any frozen configuration on any route) = 4.75 GiB. swap_growth = ceil_0.25GiB(2 x 1.32 GiB largest system swap growth in any measured fit) = 2.75 GiB. preflight available = ceil_0.25GiB(2.39 GiB largest V1-route tree max(RSS, footprint) over all 12 configurations + 0.5 GiB reserve for background drift, max measured 0.32 GiB per sample) = 3.0 GiB; no swap and no compression are credited. disk preflight = 10 GiB floor + 1.25 GiB temp + 2.75 GiB swap allowance = 14 GiB. time = max(1 h, 3 x 529 s)."
+}

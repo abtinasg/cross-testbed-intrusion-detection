@@ -1,0 +1,73 @@
+order,column,csv_position,observed_type_P1,observed_type_P2,unit,storage_dtype_proposed,constant_P1,constant_P2
+1,Protocol,7,integer,integer,categorical code,int64,False,False
+2,Flow Duration,9,integer,integer,microseconds,int64,False,False
+3,Total Fwd Packet,10,integer,integer,packets,int64,False,False
+4,Total Bwd packets,11,integer,integer,packets,int64,False,False
+5,Total Length of Bwd Packet,13,integer,integer,bytes,int64,False,False
+6,Fwd Packet Length Max,14,integer,integer,bytes,int64,False,False
+7,Fwd Packet Length Min,15,integer,integer,bytes,int64,False,False
+8,Fwd Packet Length Mean,16,float,float,bytes,float64,False,False
+9,Fwd Packet Length Std,17,float,float,bytes,float64,False,False
+10,Bwd Packet Length Max,18,integer,integer,bytes,int64,False,False
+11,Bwd Packet Length Min,19,integer,integer,bytes,int64,False,False
+12,Bwd Packet Length Mean,20,float,float,bytes,float64,False,False
+13,Bwd Packet Length Std,21,float,float,bytes,float64,False,False
+14,Flow Bytes/s,22,float,float,bytes/second,float64,False,False
+15,Flow Packets/s,23,float,float,packets/second,float64,False,False
+16,Flow IAT Mean,24,float,float,microseconds,float64,False,False
+17,Flow IAT Std,25,float,float,microseconds,float64,False,False
+18,Flow IAT Max,26,integer,integer,microseconds,int64,False,False
+19,Flow IAT Min,27,integer,integer,microseconds,int64,False,False
+20,Fwd IAT Total,28,integer,integer,microseconds,int64,False,False
+21,Fwd IAT Mean,29,float,float,microseconds,float64,False,False
+22,Fwd IAT Std,30,float,float,microseconds,float64,False,False
+23,Fwd IAT Max,31,integer,integer,microseconds,int64,False,False
+24,Fwd IAT Min,32,integer,integer,microseconds,int64,False,False
+25,Bwd IAT Total,33,integer,integer,microseconds,int64,False,False
+26,Bwd IAT Mean,34,float,float,microseconds,float64,False,False
+27,Bwd IAT Std,35,float,float,microseconds,float64,False,False
+28,Bwd IAT Max,36,integer,integer,microseconds,int64,False,False
+29,Bwd IAT Min,37,integer,integer,microseconds,int64,False,False
+30,Fwd PSH Flags,38,integer,integer,count of packets with flag,int64,False,False
+31,Bwd PSH Flags,39,integer,integer,count of packets with flag,int64,False,False
+32,Fwd RST Flags,42,integer,integer,count of packets with flag,int64,False,False
+33,Bwd RST Flags,43,integer,integer,count of packets with flag,int64,False,False
+34,Fwd Packets/s,46,float,float,packets/second,float64,False,False
+35,Bwd Packets/s,47,float,float,packets/second,float64,False,False
+36,Packet Length Min,48,integer,integer,bytes,int64,False,False
+37,Packet Length Max,49,integer,integer,bytes,int64,False,False
+38,Packet Length Mean,50,float,float,bytes,float64,False,False
+39,Packet Length Std,51,float,float,bytes,float64,False,False
+40,Packet Length Variance,52,float,float,bytes,float64,False,False
+41,FIN Flag Count,53,integer,integer,count of packets with flag,int64,False,False
+42,SYN Flag Count,54,integer,integer,count of packets with flag,int64,False,False
+43,RST Flag Count,55,integer,integer,count of packets with flag,int64,False,False
+44,PSH Flag Count,56,integer,integer,count of packets with flag,int64,False,False
+45,ACK Flag Count,57,integer,integer,count of packets with flag,int64,False,False
+46,CWR Flag Count,59,integer,integer,count of packets with flag,int64,False,False
+47,ECE Flag Count,60,integer,integer,count of packets with flag,int64,False,False
+48,Down/Up Ratio,61,float,float,"ratio (bwd/fwd packets, integer-truncated in CICFlowMeter)",float64,False,False
+49,Average Packet Size,62,float,float,bytes,float64,False,False
+50,Fwd Segment Size Avg,63,float,float,bytes,float64,False,False
+51,Bwd Segment Size Avg,64,float,float,bytes,float64,False,False
+52,Fwd Bytes/Bulk Avg,65,integer,integer,bytes,int64,False,False
+53,Fwd Packet/Bulk Avg,66,integer,integer,packets,int64,False,False
+54,Fwd Bulk Rate Avg,67,integer,integer,bytes/second,int64,False,False
+55,Bwd Bytes/Bulk Avg,68,integer,integer,bytes,int64,False,False
+56,Bwd Packet/Bulk Avg,69,integer,integer,packets,int64,False,False
+57,Bwd Bulk Rate Avg,70,integer,integer,bytes/second,int64,False,False
+58,Subflow Fwd Packets,71,integer,integer,packets,int64,False,False
+59,Subflow Fwd Bytes,72,integer,integer,bytes,int64,False,False
+60,Subflow Bwd Packets,73,integer,integer,packets,int64,False,False
+61,Subflow Bwd Bytes,74,integer,integer,bytes,int64,False,False
+62,Fwd Act Data Pkts,77,integer,integer,packets,int64,False,False
+63,Active Mean,79,float,float,microseconds,float64,False,False
+64,Active Std,80,float,float,microseconds,float64,False,False
+65,Active Max,81,integer,integer,microseconds,int64,False,False
+66,Active Min,82,integer,integer,microseconds,int64,False,False
+67,Idle Mean,83,float,float,microseconds,float64,False,False
+68,Idle Std,84,float,float,microseconds,float64,False,False
+69,Idle Max,85,integer,integer,microseconds,int64,False,False
+70,Idle Min,86,integer,integer,microseconds,int64,False,False
+71,ICMP Code,87,integer,integer,categorical code,int64,False,False
+72,ICMP Type,88,integer,integer,categorical code,int64,False,False

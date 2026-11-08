@@ -1,0 +1,11 @@
+# Exact versions used for every reported result (Python 3.13.5, Anaconda, macOS 26.6.1, Apple M1).
+# numpy, scikit-learn and psutil are also pinned inside the resource-guard policy and are checked at run time.
+numpy==2.4.6
+scikit-learn==1.9.0
+scipy==1.18.0
+polars==1.40.1
+pyarrow==24.0.0
+psutil==5.9.0
+threadpoolctl==3.5.0
+joblib==1.5.3
+matplotlib==3.11.0

@@ -1,0 +1,42 @@
+{
+ "utc": "2026-11-07T14:42:49Z",
+ "key": [
+  "SCORE",
+  "Wed14"
+ ],
+ "token": "GO-RECOVER-P2-WED14-6a48c8ab0904",
+ "attempt": 2,
+ "attempt_id": "f3c56eead5274c77ab8a391026a84818",
+ "authorised_by": "owner: one-time P2 SCORE/Wed14 recovery (exit race at job_returned)",
+ "replaces": {
+  "ledger_line": 2,
+  "ledger_line_sha256": "b5030e423a41b296e3a5600b1af5e73e5b458a6546212f30c48e23a2e1ae367a"
+ },
+ "stopped_archived_as": "STOPPED_SCORE__Wed14__attempt1.json",
+ "stopped_sha256": "6a48c8ab0904da8640cf17d37a4dcdd60c3107b985cf3b4b6074b002b66a522b",
+ "attempt1_unverified_outputs_moved_sha256": {
+  "availability_us_P2_Wed14.npy": "2895ca9110fd6661095694831a8588a92b83aa09b35f33c79f3e413306fb56bb",
+  "row_ids_P2_Wed14.npy": "e69741359f93ce8fd3040eec35952e4479c261e9ea618fc7bdfa1409065a7e0a",
+  "scores_P2_Wed14.npy": "5621027e8456d48ff6a1c48d3fd7b6488336887a0bc1266c51ddfc276ff428c1",
+  "tie_keys_P2_Wed14.npy": "c1b813c374493f837e763c322461ef996962d4c2023ffbb376bbfa78282c3ba2",
+  "P2_Wed14_label_free.parquet": "d958bcc353258b36ecadd5fb56c6db6d16cf7a727da184e4d919832a75d1771a"
+ },
+ "attempt1_evidence_dir_kept": "evidence/SCORE__Wed14",
+ "final_fit_reused": {
+  "model": {
+   "file": "RF-03_P1all.joblib",
+   "sha256": "487ae17e3828ffb628b43d1f1c511aa683fd2a090afbeb9cc96a53f99d4a0428",
+   "bytes": 4651113
+  },
+  "artefact": {
+   "file": "RF-03_P1all_preprocessing_artefact.pkl",
+   "sha256": "8036c2e755a38a76a477d18412018e2a3f9b6f7748510ef2fba6773e1a712d4b",
+   "bytes": 3908
+  }
+ },
+ "guard_for_remaining_keys": {
+  "module": "RG8_V23_EXIT_RACE/rg8_guard_v23.py",
+  "sha256": "0a57cf33dbbf5d90af2104bedbbf75ef0a08919f49e82aa01ec600faa0bf90a2"
+ },
+ "rule": "exactly one recovery attempt; any failure stops P2 with no further retry"
+}
